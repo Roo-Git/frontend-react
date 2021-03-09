@@ -1,18 +1,16 @@
-.botoncitoGuay {
-    height: 2em;
-    width: 4em;
-
-    background-color: cadetblue;
-    transition: 0.3s;
-
-    border-radius: 0.4em;
-
+.button {
     display: flex;
     justify-content: center;
+    height: 2em;
+    width: 4em;
+    background-color: cadetblue;
+    transition: 0.3s;
+    border-radius: 0.4em;
+    margin: 1em;
     
 }
 
-.botoncitoGuay:hover {
+.button:hover {
     transition: 0.5s;
     background-color: darkcyan;
 }

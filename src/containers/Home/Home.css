@@ -17,6 +17,7 @@
     background-color: blue;
     width: 100vmax;
     height: 10em;
+    position: fixed;
 }
 
 .containerLogoTitulo {
@@ -47,8 +48,8 @@
 
 .navbar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     background-color: green;
     width: 100vmax;
@@ -91,6 +92,7 @@
     width: 100vmax;
     height: 30em;
     background-color: royalblue;
+    margin-top: 10em
 }
 
 .masterCardContainer {
@@ -102,7 +104,7 @@
 .spaceColumnHome {
     display: flex;
     height: 10em;
-    width: 40em;
+    width: 50em;
     background-color: white;
 }
 
@@ -110,7 +112,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50em;
+    width: 60em;
     height: 40em;
     background-color: salmon;
 }
