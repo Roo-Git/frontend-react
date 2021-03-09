@@ -1,7 +1,6 @@
 .masterHome {
     display: flex;
     flex-direction: column;
-    background-color: red;
 }
 
 .spaceRowHome {

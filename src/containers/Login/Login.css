@@ -1,0 +1,23 @@
+.masterLogin{
+    display: flex;
+    flex-direction: row;
+    height: 100vmin;
+}
+
+.spaceColumnLogin {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 100vmin;
+    height: 100vmin;
+}
+
+.containerLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+    width: 100vmin;
+
+}

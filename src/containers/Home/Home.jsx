@@ -6,7 +6,7 @@ const Home = (props) => {
 
    
 
-    return (
+    return ( 
         <div className="masterHome">
             <div className="header">
                 <div className="containerLogoTitulo">
