@@ -1,0 +1,18 @@
+.botoncitoGuay {
+    height: 2em;
+    width: 4em;
+
+    background-color: cadetblue;
+    transition: 0.3s;
+
+    border-radius: 0.4em;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.botoncitoGuay:hover {
+    transition: 0.5s;
+    background-color: darkcyan;
+}

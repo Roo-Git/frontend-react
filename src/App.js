@@ -4,9 +4,9 @@ import './App.css';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 // IMPORT VIEW.CONTAINERS
-import Home from './view.containers/Home/Home';
-import Login from './view.containers/Login/Login';
-import Register from './view.containers/Register/Register'
+import Home from './containers/Home/Home';
+import Login from './containers/Login/Login';
+import Register from './containers/Register/Register'
 
 
 
@@ -19,8 +19,9 @@ function App() {
         <Switch>
 
           <Route path='/' exact component={Home}/>
-          <Route path='/register' exact component={Register}/>
           <Route path='/login' exact component={Login}/>
+          <Route path='/register' exact component={Register}/>
+
           
 
 
