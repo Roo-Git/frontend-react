@@ -1,7 +1,14 @@
 .masterHome {
     display: flex;
+    flex-direction: column;
     background-color: red;
-    height: 100vh;
+}
+
+.spaceRowHome {
+    display: flex;
+    width: 100vmax;
+    height: 2em;
+    background-color: white;
 }
 
 .header {
@@ -75,5 +82,47 @@
     height: 3em;
     background-color: plum;
 }
+
+.carouselContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vmax;
+    height: 30em;
+    background-color: royalblue;
+}
+
+.masterCardContainer {
+    display: flex;
+    background-color: white;
+    height: 45em;
+}
+
+.spaceColumnHome {
+    display: flex;
+    height: 10em;
+    width: 40em;
+    background-color: white;
+}
+
+.serviceCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50em;
+    height: 40em;
+    background-color: salmon;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vmax;
+    height: 20em;
+    background-color: yellowgreen;
+}
+
 
 
