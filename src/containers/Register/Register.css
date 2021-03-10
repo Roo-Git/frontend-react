@@ -6,6 +6,8 @@
 
 .spaceColumnRegister {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-color: grey;
     width: 100vmin;

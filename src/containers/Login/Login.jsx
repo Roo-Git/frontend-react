@@ -22,7 +22,7 @@ const Login = (props) => {
             <Input type="password" name="password"/>
           </label>
         </div>
-        <Button className="loginButton" name='login' destiny='profile'/>
+        <Button name='login' destiny=''/>
       </div>
         <div className="spaceColumnLogin"></div>
     </div>
