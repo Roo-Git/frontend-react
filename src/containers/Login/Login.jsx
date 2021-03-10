@@ -1,12 +1,30 @@
 import React, {useState, useEffect} from 'react';
-import Button from '../../components/Button/Button'
 import Input from '../../components/Input/Input';
+import axios from 'axios';
 
 import './Login.css'
+import Submit from '../../components/Submit/Submit';
 
-const Login = (props) => {
+const Login = () => {
 
+  const [dataLogin,setLogin] = useState({
 
+    email : '',
+    password: ''
+  });
+
+  const handleState = (event) => {
+    setLogin({...dataLogin, [event.target.name]: event.target.type === "number" ? + event.target.value : event.target.value})
+  };
+
+  useEffect(() => {
+
+  },[]);
+
+  const postLogin = async () => {
+    let result = await axios.post('http://localhost:3000/customers/login', dataLogin);
+    console.log(result)
+  }
 
   return (
     <div className="masterLogin">
@@ -15,14 +33,14 @@ const Login = (props) => {
         <div className="loginForm">
           <label>
               E-mail:
-            <Input type="email" name="email"/>
+            <Input type="email" name="email" onChange={handleState}/>
           </label>
           <label>
               Password:
-            <Input type="password" name="password"/>
+            <Input type="password" name="password" onChange={handleState}/>
           </label>
         </div>
-        <Button name='login' destiny=''/>
+        <Submit type="submit" name="submit" title="Enviar" onClick={() => postLogin()}/>
       </div>
         <div className="spaceColumnLogin"></div>
     </div>

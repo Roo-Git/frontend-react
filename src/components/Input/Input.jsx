@@ -1,12 +1,12 @@
 import React from 'react';
 import './Input.css';
 
-const Input = () => {
+const Input = (props) => {
   return (
     <div>
-      <input type="text" name="name" />
+      <input type={props.type} name={props.name} />
     </div>
   )
-}
+};
 
 export default Input
