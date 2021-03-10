@@ -5,17 +5,17 @@ import {useHistory} from 'react-router-dom';
 
 const Button = (props) => {
 
-    let history = useHistory();
+  let history = useHistory();
 
-    const direction = () => {
-        history.push(`/${props.destiny}`)
-    }
+  const direction = () => {
+    history.push(`/${props.destiny}`)
+  }
 
-    return(
-        <div onClick={()=> direction()} className="button">
-            {props.name}
-        </div>
-    )
+  return(
+    <div onClick={()=> direction()} className="button">
+        {props.name}
+    </div>
+  )
 }
 
 export default Button;

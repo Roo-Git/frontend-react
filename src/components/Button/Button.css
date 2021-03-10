@@ -1,5 +1,6 @@
 .button {
     display: flex;
+    align-items: center;
     justify-content: center;
     height: 2em;
     width: 4em;
@@ -7,6 +8,7 @@
     transition: 0.3s;
     border-radius: 0.4em;
     margin: 1em;
+    cursor: pointer;
     
 }
 
