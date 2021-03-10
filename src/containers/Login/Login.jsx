@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import Input from '../../components/Input/Input';
-import axios from 'axios';
+import axios from 'axios'
 
 import './Login.css'
+
+import Input from '../../components/Input/Input';
 import Submit from '../../components/Submit/Submit';
+
 
 const Login = () => {
 
@@ -11,6 +13,7 @@ const Login = () => {
 
     email : '',
     password: ''
+
   });
 
   const handleState = (event) => {
@@ -24,7 +27,7 @@ const Login = () => {
   const postLogin = async () => {
     let result = await axios.post('http://localhost:3000/customers/login', dataLogin);
     console.log(result)
-  }
+  };
 
   return (
     <div className="masterLogin">
