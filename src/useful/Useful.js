@@ -10,7 +10,7 @@ const checkError = (datosCheck) => {
 
         switch(field) {
 
-            case 'nombre' : 
+            case 'firstName' : 
 
                 // eslint-disable-next-line
                 if(! /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/.test(datosCheck[field])){
@@ -19,6 +19,16 @@ const checkError = (datosCheck) => {
                 }
 
             break;
+
+            case 'lastName' : 
+
+            // eslint-disable-next-line
+            if(! /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/.test(datosCheck[field])){
+
+                return "El apellido introducido solo puede contener letras";
+            }
+
+        break;
 
             case 'email' :
                 
@@ -67,5 +77,5 @@ const checkAge = (birth, age) => {
 
 export {
     checkError,
-    checkAge
+   // checkAge
 };
