@@ -1,8 +1,9 @@
 import React from 'react'
 import Button from '../Button/Button';
+import './Header.css'
 
 
-const Navbar = () => {
+const Header = () => {
   return (
    
   <div className="header">
@@ -22,4 +23,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Header
