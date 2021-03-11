@@ -43,7 +43,7 @@ const Register = () => {
     };
     console.log(body)
     let result = await axios.post('http://localhost:3000/customers/', body);
-    //console.log(result)
+    console.log(result)
   };
 
 
@@ -57,7 +57,7 @@ const Register = () => {
       </label>
       <label>
           Last Name:
-        <Input type="email" name="lastName"onChange={handleState}/>
+        <Input type="text" name="lastName"onChange={handleState}/>
       </label>
       <label>
           Password:
@@ -65,17 +65,17 @@ const Register = () => {
       </label>
       <label>
           E-mail:
-        <Input type="email" name="email"onChange={handleState}/>
+        <Input type="text" name="email"onChange={handleState}/>
       </label>
       <label>
           Phone Number:
-        <Input type="string"  name="phoneNumber"onChange={handleState}/>
+        <Input type="text"  name="phoneNumber"onChange={handleState}/>
       </label>
       <label>
           Address:
-        <Input type="string" name="address"onChange={handleState}/>
+        <Input type="text" name="address"onChange={handleState}/>
       </label>
-      <Submit type="submit" name="submit" title="Enviar" onClick={() => postRegister()}/>
+      <Submit  title="Enviar" onClick={() => postRegister()}/>
       </div>
       <div className="spaceColumnRegister"></div>
     </div>
