@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../Button/Button';
 import './Header.css'
+import logoDentista from '../../assets/logoDentista.png';
 
 
 const Header = () => {
@@ -8,8 +9,10 @@ const Header = () => {
    
   <div className="header">
       <div className="containerLogoTitulo">
-      <div className="logo">Logo Empresa</div>
-      <div className="titulo">Título Empresa</div>
+      <div className="logoContainer">
+      <img className="logoImg"src={logoDentista} alt=""/>
+      </div>
+      <div className="titulo">Clinica de Barrio: Dr. La Muela</div>
       </div>
       <div className="navbar">Navbar
           <Button name='Register' destiny='register'/>

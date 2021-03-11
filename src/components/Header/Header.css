@@ -22,13 +22,18 @@
     width: 20em;
 }
 
-.logo {
+.logoContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: pink;
     width: 20em;
     height: 7em;
+}
+
+.logoImg {
+    align-self: center;
+    width: 7em;
 }
 
 .titulo {
