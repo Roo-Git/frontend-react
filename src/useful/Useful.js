@@ -50,6 +50,24 @@ const checkError = (datosCheck) => {
                 
             break;
 
+            case 'phoneNumber' : 
+
+            // eslint-disable-next-line
+            if(! /^[0-9]{9,11}$/.test(datosCheck[field])){
+
+                return "Introduce nueve dígitos, por favor.";
+            }
+
+            //case 'address' : 
+
+            // eslint-disable-next-line
+            //if(! /^\d+\s[A-z]+\s[A-z]/.test(datosCheck[field])){
+
+                //return "La calle introducida es incorrecta.";
+            //}
+
+        break;
+
             default: 
 
             break;
