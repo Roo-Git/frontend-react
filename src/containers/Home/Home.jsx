@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
+import Navbar from '../../components/Navbar/Navbar';
 import './Home.css'
 
 const Home = (props) => {
@@ -8,6 +9,7 @@ const Home = (props) => {
   return ( 
     <div className="masterHome">
       <Header/>
+      <Navbar/>
       <div className="spaceRowHome"></div>
       <div className="carouselContainer">Carousel Container</div>
       <div className="spaceRowHome"></div>

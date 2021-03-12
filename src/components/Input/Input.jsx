@@ -4,7 +4,7 @@ import './Input.css';
 const Input = (props) => {
   return (
     <div>
-      <input type={props.type} name={props.name} />
+      <input type={props.type} name={props.name} onChange={props.onChange} maxLength={props.maxLength} />
     </div>
   )
 };

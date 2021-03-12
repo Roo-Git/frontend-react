@@ -4,83 +4,9 @@
 }
 
 .spaceRowHome {
-    display: flex;
     width: 100vmax;
     height: 2em;
     background-color: white;
-}
-
-.header {
-    display: flex;
-    flex-direction: row;
-    background-color: blue;
-    width: 100vmax;
-    height: 10em;
-    position: fixed;
-}
-
-.containerLogoTitulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: green;
-    width: 20em;
-}
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: pink;
-    width: 20em;
-    height: 7em;
-}
-
-.titulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: plum;
-    width: 20em;
-    height: 3em;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: green;
-    width: 100vmax;
-    height: 3em;
-    margin-top: 7em;
-}
-
-.containerPhone {
-    display: flex;
-    flex-direction: row;
-    width: 20em;
-    background-color: yellow;
-}
-
-.logoPhone {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 3em;
-    height: 3em;
-    background-color: pink;
-}
-
-.phoneNumber {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 12em;
-    height: 3em;
-    background-color: plum;
 }
 
 .carouselContainer{
@@ -90,8 +16,8 @@
     align-items: center;
     width: 100vmax;
     height: 30em;
+    margin-top: 7em;                
     background-color: royalblue;
-    margin-top: 10em
 }
 
 .masterCardContainer {
@@ -112,7 +38,7 @@
     justify-content: center;
     align-items: center;
     width: 60em;
-    height: 40em;
+    height: 30em;
     background-color: salmon;
 }
 

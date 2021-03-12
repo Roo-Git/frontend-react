@@ -5,6 +5,7 @@ import './Login.css'
 
 import Input from '../../components/Input/Input';
 import Submit from '../../components/Submit/Submit';
+import {checkError, checkAge} from '../../useful/Useful';
 
 
 const Login = () => {
@@ -36,7 +37,7 @@ const Login = () => {
         <div className="loginForm">
           <label>
               E-mail:
-            <Input type="email" name="email" onChange={handleState}/>
+            <Input type="text" name="email" onChange={handleState}/>
           </label>
           <label>
               Password:

@@ -1,25 +1,43 @@
 import React from 'react'
 import Button from '../Button/Button';
+import './Header.css'
+import logoBussines from '../../assets/logoBussines.jpg';
 
 
-const Navbar = () => {
+const Header = () => {
   return (
+    
    
   <div className="header">
-      <div className="containerLogoTitulo">
-      <div className="logo">Logo Empresa</div>
-      <div className="titulo">Título Empresa</div>
-      </div>
-      <div className="navbar">Navbar
-          <Button name='Register' destiny='register'/>
-          <Button name='Login' destiny='login'/>
-      </div>
-      <div className="containerPhone">
-          <div className="logoPhone">Logo</div>
-          <div className="phoneNumber">Phone Number</div>
-      </div>
+
+    <div className="spaceRow1"></div>
+
+    <div className="containerLogoBussines">
+        <img className="logoBussines"src={logoBussines} alt=""/>
+    </div>
+      
+    <div className="containerTitle">
+        <div className="title1">Doc.</div>
+        <div className="title2">La Muela</div>
+    </div>
+
+    <div className="spaceRow2"></div>
+
+    <div className="containerButtons">
+        <Button name="Iniciar Sesión" destiny='login'/>
+        <Button name="Registrate" destiny='register'/>
+    </div>
+
+    <div className="column"></div>
+
   </div>
+
+
+
   )
 }
 
-export default Navbar
+
+
+export default Header
+
