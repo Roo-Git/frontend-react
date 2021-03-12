@@ -1,84 +1,69 @@
-.spaceRowHome {
-    display: flex;
-    width: 100vmax;
-    height: 2em;
-    background-color: white;
-}
+/*
+#e8fdfe; azul
+#fa7bb0; rosa
+#168f9d; azul verdoso
+
+*/
+
+
 
 .header {
     display: flex;
     flex-direction: row;
-    background-color: blue;
     width: 100vmax;
-    height: 10em;
+    height: 5em;
+    background-color: #e8fdfe;
     position: fixed;
 }
 
-.containerLogoTitulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: green;
-    width: 20em;
+.spaceRow1 {
+    background-color: #e8fdfe;
+    width: 20vmax;
+    height: 5em;
 }
 
-.logoContainer {
+.containerLogoBussines {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: pink;
-    width: 20em;
-    height: 7em;
-}
-
-.logoImg {
+    flex-direction: row;
     align-self: center;
-    width: 7em;
+    width: 4em;
+    height: 4em;
+    background-color: white;
 }
 
-.titulo {
+.logoBussines {
+    display: flex;
+    justify-content: center;
+    width: 4em;
+    height: 4em;
+}
+
+.containerTitle {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: plum;
-    width: 20em;
-    height: 3em;
+    margin-left: 1em;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: green;
-    width: 100vmax;
-    height: 3em;
-    margin-top: 7em;
+.title1, .title2 {
+    color: #fa7bb0;
+    font-weight: 800;
 }
 
-.containerPhone {
-    display: flex;
-    flex-direction: row;
-    width: 20em;
-    background-color: yellow;
+.spaceRow2 {
+    background-color:#e8fdfe;
+    width: 50vmax;
+    height: 5em;
 }
 
-.logoPhone {
+.containerButtons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 3em;
-    height: 3em;
-    background-color: pink;
 }
 
-.phoneNumber {
+.column {
+    background-color: #168f9d;
+    width: 2.5em;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 12em;
-    height: 3em;
-    background-color: plum;
+    flex-direction: column;
 }

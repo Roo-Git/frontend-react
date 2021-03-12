@@ -3,25 +3,12 @@
     flex-direction: column;
 }
 
-.logoPhone {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 3em;
-    height: 3em;
-    background-color: pink;
+.spaceRowHome {
+    width: 100vmax;
+    height: 2em;
+    background-color: white;
 }
 
-.phoneNumber {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 12em;
-    height: 3em;
-    background-color: plum;
-}
 .carouselContainer{
     display: flex;
     flex-direction: row;
@@ -29,8 +16,8 @@
     align-items: center;
     width: 100vmax;
     height: 30em;
+    margin-top: 7em;                
     background-color: royalblue;
-    margin-top: 10em
 }
 
 .masterCardContainer {
