@@ -1,30 +1,34 @@
 import React, {useState} from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import { useHistory } from 'react-router-dom';
+
 
 import './Register.css'
 
-import {checkError, checkAge} from '../../useful/Useful';
+import {checkError} from '../../useful/Useful';
 import Input from '../../components/Input/Input';
 import Submit from '../../components/Submit/Submit';
+import Header from '../../components/Header/Header';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer'
+
 
 
 const Register = () => {
 
+  const history = useHistory();
+
   const [dataRegister, setRegister] = useState({
     
-
+    
     firstName : '',
     lastName : '',
     password : '', 
     email : '',
     phoneNumber : '',
-    address : ''
-
   });
 
   const [message, setMessage] = useState('');
-  //const [messageDate, setMessageDate] = useState('');
-
   
   // HANDLERS
 
@@ -32,25 +36,13 @@ const Register = () => {
     setRegister({...dataRegister, [event.target.name]: event.target.type === "number" ? + event.target.value : event.target.value})
   };
 
-
-
   // FUNCTIONS
 
-
   const sendData = async () => {
-    
-
+  
     setMessage('');
 
-    //let errorDate = checkAge(dataRegister.date, 17);
-    //setMessageDate(errorDate);
-
-    //if(errorDate) {
-      //return;
-    //};
-
     let messageError = checkError(dataRegister);
-    console.log(messageError)
     setMessage(messageError);
 
     if(messageError){
@@ -63,23 +55,24 @@ const Register = () => {
       password: dataRegister.password,
       email: dataRegister.email,
       phoneNumber: dataRegister.phoneNumber,
-      address: dataRegister.address
     };
 
     let result = await axios.post('http://localhost:3000/customers/', body);
     console.log(result)
 
+    return setTimeout(() => {
+      history.push('/profile')
+    }, 1000);
 
   }
 
-
-
-
-
   return (
+    
     <div className="masterRegister">
-      <pre>{JSON.stringify(dataRegister, null,2)}</pre>
-        <div className="spaceColumnRegister"></div>
+        <Header/>
+        <Navbar/>
+      {/* <pre>{JSON.stringify(dataRegister, null,2)}</pre> */}
+      <div className="spaceColumnRegisterUp"></div>
         <div className="containerForm">
         <label>
           First Name:
@@ -101,19 +94,16 @@ const Register = () => {
           Phone Number:
         <Input type="text"  maxLength="12" name="phoneNumber"onChange={handleState}/>
       </label>
-      <label>
-          Address:
-        <Input type="text" maxLength="50" name="address"onChange={handleState}/>
-      </label>
       <div>{message}</div>
-      <Submit  title="Enviar" onClick={() => sendData()}/>
+      <Submit title="Enviar" onClick={() => sendData()}/>
       </div>
-      <div className="spaceColumnRegister"></div>
+      <div className="spaceColumnRegisterDown"></div>
+      <Footer/>
     </div>
 
   )
 
-}
+};
 
 // <div>{messageDate}</div>
 

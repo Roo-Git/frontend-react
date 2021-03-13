@@ -1,17 +1,28 @@
 .masterRegister{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vmin;
 }
 
-.spaceColumnRegister {
+.spaceColumnRegisterUp {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: grey;
     width: 100vmin;
-    height: 100vmin;
+    height: 20vmin;
+}
+
+.spaceColumnRegisterDown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vmin;
+    height: 30vmin;
+    border-radius: 10px;
 }
 
 .containerForm {
@@ -20,6 +31,14 @@
     justify-content: center;
     align-items: center;
     background-color: lightblue;
-    width: 100vmin;
+    width: 50vmin;
+    height: 25em;
+    margin: .5em;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px black;
+}
 
+label {
+    margin: .5em;
+    margin-top: 1em;
 }
