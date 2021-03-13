@@ -1,54 +1,57 @@
 .masterHome {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .spaceRowHome {
-    width: 100vmax;
-    height: 2em;
-    background-color: white;
+  width: 100vmax;
+  height: 10em;
+  background-color: white;
+}
+
+.spaceBtwHead {
+  width: 100vmax;
+  height: 3em;
+  background-color: white;
+
 }
 
 .carouselContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100vmax;
-    height: 30em;
-    margin-top: 7em;                
-    background-color: royalblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vmax;
+  height: 250m;
 }
 
-.masterCardContainer {
-    display: flex;
-    background-color: white;
-    height: 45em;
+.imgStyle {
+  width: 99vmax;
+  height: 30vmax;
 }
 
 .spaceColumnHome {
-    display: flex;
-    height: 10em;
-    width: 50em;
-    background-color: white;
+  display: flex;
+  height: 10em;
+  width: 50em;
+  background-color: white;
 }
 
-.serviceCardContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60em;
-    height: 30em;
-    background-color: salmon;
+.masterCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  height: 22em;
 }
 
 .footerContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vmax;
-    height: 20em;
-    background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vmax;
+  height: 10em;
+  background-color: yellowgreen;
 }
 
 
