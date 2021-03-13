@@ -1,15 +1,16 @@
 .masterLogin{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vmin;
 }
 
 .spaceColumnLogin {
     display: flex;
     flex-direction: column;
-    background-color: grey;
     width: 100vmin;
-    height: 100vmin;
+    height: 40em;
 }
 
 .containerLogin{
@@ -18,10 +19,11 @@
     justify-content: center;
     align-items: center;
     background-color: lightcoral;
-    width: 100vmin;
-    height: 20em;
+    width: 50vmin;
+    height: 50em;
     margin: 1em;
-
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px black;
 }
 
 .loginForm {
@@ -33,3 +35,16 @@
     margin: 2em;
 }
 
+.spaceBetweenHead {
+    width: 100vmax;
+    height: 25em;
+}
+
+.register {
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.register:hover {
+    color: blue;
+}
