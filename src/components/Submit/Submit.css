@@ -1,0 +1,8 @@
+.submitStyle {
+  width: 2em;
+  height: 1em;
+  transition: 0.3s;
+  border-radius: 0.4em;
+  background-color: royalblue;
+  cursor: pointer;
+}

@@ -1,0 +1,69 @@
+/*
+#e8fdfe; azul
+#fa7bb0; rosa
+#168f9d; azul verdoso
+
+*/
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100vmax;
+    height: 5em;
+    background-color: #e8fdfe;
+    position: fixed;
+}
+
+.spaceRow1 {
+    background-color: #e8fdfe;
+    width: 20vmax;
+    height: 5em;
+}
+
+.containerLogoBussines {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 4em;
+    height: 4em;
+    background-color: white;
+}
+
+.logoBussines {
+    display: flex;
+    justify-content: center;
+    width: 4em;
+    height: 4em;
+}
+
+.containerTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.title1, .title2 {
+    color: #fa7bb0;
+    font-weight: 800;
+}
+
+.spaceRow2 {
+    background-color:#e8fdfe;
+    width: 50vmax;
+    height: 5em;
+}
+
+.containerButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    background-color: #168f9d;
+    width: 2.5em;
+    display: flex;
+    flex-direction: column;
+}

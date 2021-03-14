@@ -1,0 +1,23 @@
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 1em;
+    height: 3em;
+    width: 6em;
+    transition: 0.3s;
+    border-radius: 0.4em;
+    cursor: pointer;
+    color: #fa7bb0;
+    font-weight: 800;
+    
+}
+
+.button:hover {
+    transition: 0.5s;
+    background-color: #fa7bb0;
+    color: white;
+    font-weight: 800;
+}

@@ -1,0 +1,25 @@
+.masterRegister{
+    display: flex;
+    flex-direction: row;
+    height: 100vmin;
+}
+
+.spaceColumnRegister {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: grey;
+    width: 100vmin;
+    height: 100vmin;
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    width: 100vmin;
+
+}
