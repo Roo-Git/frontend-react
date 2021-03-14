@@ -1,9 +1,7 @@
 .navbar {
-    display: flex;
-    flex-direction: column;
-    width: 100vmax;
-    height: 2.5em;
-    margin-top: 5em;
-    background-color: #168f9d;
-    position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 100vmax;
+	height: 2.5em;
+	background-color: #168f9d;
 }
