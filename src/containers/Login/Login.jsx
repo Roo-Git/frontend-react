@@ -9,7 +9,9 @@ import Submit from '../../components/Submit/Submit';
 // import {checkError, checkAge} from '../../useful/Useful';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer'
+import Footer from '../../components/Footer/Footer';
+import piñosChill from '../../assets/Images/piñosChill.jpeg'
+
 
 
 const Login = () => {
@@ -37,20 +39,25 @@ const Login = () => {
 
       return setTimeout(() => {
         history.push('/profile')
-    }, 1000);
+    }, 500);
   };
 
   const goToRegister = () => {
-    history.push('/register')
+    return setTimeout(() => {
+      history.push('/register')
+    }, 500);
   }
 
   return (
     <div className="masterLogin">
       <Header/>
       <Navbar/>
-      <div className="spaceBetweenHead"></div>
+      {/* <div className="spaceBetweenHead"></div> */}
       {/* <div className="spaceColumnLogin"></div> */}
       <div className="containerLogin">
+        <div className="leftImg">
+          <img className="imgStyle" src={piñosChill} alt=""/>
+        </div>
       <div className="loginForm">
         <label>
             E-mail:
@@ -61,10 +68,10 @@ const Login = () => {
           <Input type="password" name="password" onChange={handleState}/>
         </label>
         <div className="register" onClick={goToRegister}>click here to register</div>
+        <Submit type="submit" name="submit" title="Enviar" onClick={() => postLogin()}/>
       </div>
-      <Submit type="submit" name="submit" title="Enviar" onClick={() => postLogin()}/>
       </div>
-      <div className="spaceColumnLogin"></div>
+      {/* <div className="spaceColumnLogin"></div> */}
       <Footer/>
     </div>
 

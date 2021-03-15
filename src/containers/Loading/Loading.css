@@ -1,0 +1,9 @@
+.gifContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+  margin-right: 5em;
+}
+
+

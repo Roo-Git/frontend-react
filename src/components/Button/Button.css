@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
-    margin: 1em;
+    margin-right: 4em;
+    margin-top: 1em;
     height: 3em;
     width: 6em;
     transition: 0.3s;

@@ -1,8 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 import './Footer.css';
-import logoBussines from '../../assets/Icons/logoBussines.jpg';
 import facebook from '../../assets/FooterlIcons/facebook.png';
 import direccion from '../../assets/FooterlIcons/direccion.png';
 import instagram from '../../assets/FooterlIcons/instagram.png'
@@ -13,9 +11,6 @@ import whatsapp from '../../assets/FooterlIcons/whatsapp.png'
 const Footer = () => {
   return (
     <div className="footerContainer">
-      <div className="logo">
-        <p><Link to="/"><img className="logoBussines"src={logoBussines} alt=""/></Link></p>
-      </div>
       <div className="hours">
         <p className="highlightedText">Horarios:</p><hr></hr>
         De Lunes a Viernes<hr></hr>  
@@ -36,9 +31,9 @@ const Footer = () => {
         </div><hr></hr>
         <p className="textSocialNetworks">Síguenos en Redes Sociales</p><hr></hr>
         <div className="iconsContainer">
-          <a href="https://es-es.facebook.com/" rel="nofollow" target="_blank"><img className="icons" src={facebook} alt=""/></a>
-          <a href="https://www.instagram.com/" rel="nofollow" target="_blank"><img className="icons" src={instagram} alt=""/></a>
-          <a href="https://www.https://twitter.com/.com/" rel="nofollow" target="_blank"><img className="icons" src={twiter} alt=""/></a>
+          <a href="https://es-es.facebook.com/"><img className="icons" src={facebook} alt=""/></a>
+          <a href="https://www.instagram.com/"><img className="icons" src={instagram} alt=""/></a>
+          <a href="https://www.https://twitter.com/.com/"><img className="icons" src={twiter} alt=""/></a>
         </div>
       </div>
     </div>

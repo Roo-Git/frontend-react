@@ -17,7 +17,7 @@
 
 .spaceRow1 {
 	background-color: #e8fdfe;
-	width: 20vmax;
+	width: 5vmax;
 	height: 5em;
 }
 
@@ -51,13 +51,14 @@
 
 .spaceRow2 {
 	background-color:#e8fdfe;
-	width: 50vmax;
+	width: 60vmax;
 	height: 5em;
 }
 
 .containerButtons {
 	display: flex;
 	flex-direction: row;
+
 }
 
 .column {

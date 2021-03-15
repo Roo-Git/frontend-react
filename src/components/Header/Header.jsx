@@ -30,8 +30,6 @@ const Header = () => {
           <Button name="Registrate" destiny='register'/>
       </div>
 
-      <div className="column"></div>
-
     </div>
   )
 };

@@ -10,8 +10,12 @@
 }
 
 .spaceBtwHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100vmax;
-  height: 3em;
+  height: 8em;
   background-color: white;
 
 }
@@ -25,7 +29,7 @@
   height: 250m;
 }
 
-.imgStyle {
+.styleImg {
   width: 99vmax;
   height: 30vmax;
 }
@@ -51,8 +55,15 @@
   align-items: center;
   width: 100vmax;
   height: 10em;
-  background-color: yellowgreen;
+	background-color: #168f9d;
 }
 
+.welcomeMessage {
+  font-size: 30px;
+  text-align:center;
+}
 
+.descriptionMessage {
+  margin-top: 2em;
+}
 
