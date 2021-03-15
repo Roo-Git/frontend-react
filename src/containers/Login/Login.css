@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightcoral;
+    background-color: lightblue;
     width: 50vmin;
     height: 50em;
     margin: 1em;
@@ -37,7 +37,8 @@
 
 .spaceBetweenHead {
     width: 100vmax;
-    height: 25em;
+    height: 10em;
+    margin-top: 1em;
 }
 
 .register {

@@ -3,6 +3,7 @@
   flex-direction: row;
   width: 100vmax;
   height: 10em;
+	color: #fa7bb0;
 
 }
 
@@ -12,7 +13,7 @@
   align-items: center;
   width: 15em;
   height: 10em;
-  background-color: lightseagreen;
+	background-color:#e8fdfe;
 }
 
 .hours {
@@ -21,9 +22,9 @@
   justify-content: center;
   align-items: center;
 
-  width: 20em;
+  width: 15em;
   height: 10em;
-  background-color: lightseagreen;
+	background-color:#e8fdfe;
 }
 
 .address {
@@ -32,9 +33,9 @@
   justify-content: center;
   align-items: center;
 
-  width: 25em;
+  width: 35em;
   height: 10em;
-  background-color: lightseagreen;
+	background-color:#e8fdfe;
 }
 
 .socialNetworks {
@@ -43,9 +44,9 @@
   justify-content: center;
   align-items: center;
 
-  width: 30em;
+  width: 25em;
   height: 10em;
-  background-color: lightseagreen;
+	background-color:#e8fdfe;
 }
 
 .highlightedText {

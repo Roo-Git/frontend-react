@@ -36,14 +36,14 @@
   align-items: center;
   width: 15em;
   height: 10em;
-  background-color: grey;
+  background-color: lightblue;
   margin-right: .3em;
   border-radius: 5px;
 }
 
 .card:hover {
   transition: 2s;
-  background-color: lightgrey;
+	background-color:#e8fdfe;
   box-shadow: 10px 10px 5px black;
 }
 
