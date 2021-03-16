@@ -1,27 +1,59 @@
-import React from 'react';
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
+
+
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
+import Cards from '../../components/Cards/Cards';
+
+//  Carousel Images
+// import cepillateLosDientes from '../../assets/Images/cepillateLosDientes.gif';
+import docLaMuela from '../../assets/Images/docLaMuela.jpeg';
+import niños from '../../assets/Images/niños.jpeg';
+import loveMyDentist from '../../assets/Images/loveMyDentist.jpg';
+import implant from '../../assets/Images/implant.jpg';
+import PortadaSonrisas from '../../assets/Images/PortadaSonrisas.jpeg'
+
+
 import './Home.css'
+import Footer from '../../components/Footer/Footer';
 
-const Home = (props) => {
+const Home = () => {
 
-   
+  
   return ( 
+
     <div className="masterHome">
       <Header/>
       <Navbar/>
-      <div className="spaceRowHome"></div>
-      <div className="carouselContainer">Carousel Container</div>
-      <div className="spaceRowHome"></div>
-      <div className="masterCardContainer">
-          <div className="spaceColumnHome"></div>
-          <div className="serviceCardContainer">Service Card Container</div>
-          <div className="spaceColumnHome"></div> 
+      <div className="spaceBtwHead">
+        <p className="welcomeMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p className="descriptionMessage">Rem similique voluptates ipsam commodi facere totam repellendus mollitia consequatur obcaecati, assumenda tempore nulla atque fugiat beatae provident soluta molestias modi ducimus?</p>
+      </div>
+      <div className="carouselContainer">
+        <Carousel 
+          infinite 
+          autoPlay={3000}
+          animationSpeed={2000}
+        >
+          {/* <img className="styleImg" src={cepillateLosDientes} alt=""/> */}
+          <img className="styleImg" src={docLaMuela} alt=""/>
+          <img className="styleImg" src={niños} alt=""/>
+          <img className="styleImg" src={loveMyDentist} alt=""/>
+          <img className="styleImg" src={implant} alt=""/>
+          <img className="styleImg" src={PortadaSonrisas} alt=""/>
+        </Carousel>
       </div>
       <div className="spaceRowHome"></div>
-      <div className="footerContainer">Footer</div>  
+      <div className="masterCardContainer">
+       <Cards/>
+      </div>
+      <div className="spaceRowHome"></div>
+      <Footer/> 
     </div>
   )
 }
 
 export default Home;
+
+

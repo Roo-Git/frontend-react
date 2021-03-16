@@ -1,27 +1,26 @@
 .masterLogin{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vmin;
 }
 
 .spaceColumnLogin {
     display: flex;
     flex-direction: column;
-    background-color: grey;
     width: 100vmin;
-    height: 100vmin;
+    height: 40em;
 }
 
 .containerLogin{
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     justify-content: center;
     align-items: center;
-    background-color: lightcoral;
-    width: 100vmin;
-    height: 20em;
+    width: 100vmax;
+    height: 50em;
     margin: 1em;
-
 }
 
 .loginForm {
@@ -30,6 +29,35 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2em;
+    margin-right: 2em;
+    border-radius: 5px;
+    border: solid black 2px;
+    box-shadow: 10px 10px 5px black;
+    width: 15em;
+    background-color: rgb(249,249,250);
 }
 
+.leftImg {
+    width: 40em;
+    height: 34em;
+}
+
+.imgStyle {
+    width: 20em;
+    height: 33em;
+}
+
+.spaceBetweenHead {
+    width: 100vmax;
+    height: 10em;
+    margin-top: 1em;
+}
+
+.register {
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.register:hover {
+    color: blue;
+}

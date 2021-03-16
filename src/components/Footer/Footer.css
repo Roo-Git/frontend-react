@@ -1,0 +1,83 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100vmax;
+  height: 10em;
+	color: black;
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25em;
+  height: 10em;
+	background-color: #168f9d;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 15em;
+  height: 10em;
+	background-color: #168f9d;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 35em;
+  height: 10em;
+	background-color: #168f9d;
+}
+
+.socialNetworks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 25em;
+  height: 10em;
+	background-color: #168f9d;
+}
+
+.highlightedText {
+  font-size: 30px;
+}
+
+.callMe {
+  margin-top: .5em;
+}
+
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 20em;
+  height: 10em;
+}
+
+.icons {
+  width: 1.5em;
+  margin-right: 1em;
+}
+
+.telephones,p,img {
+  display: flex;
+  flex-direction: row;
+  margin-right: .5em;
+}
+
+.textSocialNetworks {
+  font-size: 25px;
+}

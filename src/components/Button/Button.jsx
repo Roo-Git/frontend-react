@@ -8,7 +8,10 @@ const Button = (props) => {
   let history = useHistory();
 
   const direction = () => {
-    history.push(`/${props.destiny}`)
+    return setTimeout(() => {
+      history.push(`/${props.destiny}`)
+  }, 400);
+
   }
 
   return(

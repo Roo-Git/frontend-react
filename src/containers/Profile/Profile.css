@@ -1,0 +1,16 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaceUnderHead {
+  width: 100vmax;
+  height: 2em;
+}
+
+.spaceProfileContainer {
+  width: 100vmax;
+  height: 38vmax;
+}
