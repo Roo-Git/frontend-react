@@ -2,6 +2,9 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 
+// REDUX
+//import {connect} from 'react-redux';
+
 import './Login.css'
 
 import Input from '../../components/Input/Input';

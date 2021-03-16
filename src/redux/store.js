@@ -1,14 +1,18 @@
-import {createStore} from 'redux'
-import {load} from 'redux-localstorage-simple';
-import reducer from './Reducers/rootReducer'
+import {applyMiddleware, createStore} from 'redux';
+import {save, load} from 'redux-localstorage-simple';
+import reducer from './Reducers/rootReducer';
 
-const store = createStore(
+const createStoreWithMiddleware = applyMiddleware(
+    save({state:["dataCustomer"]})
+)(createStore);
+
+const store = createStoreWithMiddleware(
     reducer,
     load({
         preloadState : {
             dataCustomer : ''
         },
-        states: [dataCustomer]
+        states: ["dataCustomer"]
     })
     /* window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__({
         trace: true,
