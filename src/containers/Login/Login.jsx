@@ -3,7 +3,8 @@ import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 
 // REDUX
-//import {connect} from 'react-redux';
+import {connect} from 'react-redux';
+import {LOGIN} from '../../redux/Types/customerType.js'
 
 import './Login.css'
 
@@ -17,7 +18,7 @@ import piñosChill from '../../assets/Images/piñosChill.jpeg'
 
 
 
-const Login = () => {
+const Login = (props) => {
 
   const history = useHistory();
 
@@ -36,14 +37,20 @@ const Login = () => {
 
   },[]);
 
-  const postLogin = async () => {
+  const postLogin = async (props) => {
+    
     let result = await axios.post('http://localhost:3000/customers/login', dataLogin);
     console.log(result)
+
+    // Guardamos en RDX
+      props.dispatch({type: LOGIN, payload: result})
 
       return setTimeout(() => {
         history.push('/profile')
     }, 500);
+
   };
+  
 
   const goToRegister = () => {
     return setTimeout(() => {
@@ -82,4 +89,4 @@ const Login = () => {
 
 };
 
-export default Login;
+export default connect()(Login);
