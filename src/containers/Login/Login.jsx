@@ -65,26 +65,30 @@ const Login = (props) => {
 
   return (
     <div className="masterLogin">
-      <Navbar/>
-      <Header/>
       <div className="containerLogin">
         <div className="leftImg">
           <img className="imgStyle" src={piñosChill} alt=""/>
         </div>
-      <div className="loginForm">
-        <label>
-            E-mail:
-          <Input type="text" name="email" onChange={handleState}/>
-        </label>
-        <label>
-            Password:
-          <Input type="password" name="password" onChange={handleState}/>
-        </label>
-        <div className="register" onClick={goToRegister}>click here to register</div>
+        <div className="masterForm">
+          <div className="tituloIniciarSesion">Iniciar Sesión</div>
+        <div className="loginForm">
+        <div className="labelEmail">EMAIL</div>
+        <div className="inputEmail">
+        <Input type="text" name="email" onChange={handleState}/>
+        </div>
+        <div className="spaceForm"></div>
+        <div className="labelEmail">PASSWORD</div>
+        <div className="inputEmail">
+        <Input type="password" name="password" onChange={handleState}/>
+        </div>
+        <div className="spaceForm"></div>
+           
+        <div className="register" onClick={goToRegister}>¡Regístrate!</div>
         <Submit type="submit" name="submit" title="Enviar" onClick={() => postLogin()}/>
       </div>
+        </div>
+
       </div>
-      <Footer/>
     </div>
 
   )

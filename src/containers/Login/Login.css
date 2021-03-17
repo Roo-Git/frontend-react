@@ -6,37 +6,73 @@
     height: 100vmin;
 }
 
-.spaceColumnLogin {
-    display: flex;
-    flex-direction: column;
-    width: 100vmin;
-    height: 40em;
-}
 
 .containerLogin{
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100vmax;
+    width: 100em;
     height: 50em;
     margin: 1em;
+    background-color: #67c1c1;
+    border-radius: 2em;
+}
+.masterForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #67c1c1;
+    height: 30em;
+    width: 30em;
+}
+
+.tituloIniciarSesion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: 4em;
+    background-color: lightpink;
+    color: white;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+    
 }
 
 .loginForm {
-    border-radius: 0.4em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     justify-content: center;
-    margin-right: 2em;
-    border-radius: 5px;
-    border: solid black 2px;
-    box-shadow: 10px 10px 5px black;
-    width: 15em;
-    background-color: rgb(249,249,250);
+    height: 30em;
+    background-color: #f6f6f6;
 }
 
+.labelEmail {
+    display: flex;
+    flex-direction: row;
+    width: 25em;
+    height: 2em;
+    background-color: #f6f6f6;
+}
+.inputEmail {
+    display: flex;
+    flex-direction: row;
+    width: 25em;
+    height: 2em;
+    background-color: red;
+}
+
+.spaceForm {
+    display: flex;
+    flex-direction: row;
+    width: 25em;
+    height: 2em;
+    background-color: #f6f6f6;
+}
 .leftImg {
     width: 40em;
     height: 34em;
@@ -47,14 +83,12 @@
     height: 33em;
 }
 
-.spaceBetweenHead {
-    width: 100vmax;
-    height: 10em;
-    margin-top: 1em;
-}
 
 .register {
-    margin-top: 1em;
+    display: flex;
+    background-color: lightpink;
+    width: 20em;
+    text-align: center;
     cursor: pointer;
 }
 
