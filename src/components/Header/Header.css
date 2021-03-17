@@ -51,7 +51,7 @@
 
 .spaceRow2 {
 	background-color:#e8fdfe;
-	width: 60vmax;
+	width: 40vmax;
 	height: 5em;
 }
 
@@ -66,4 +66,9 @@
 	width: 2.5em;
 	display: flex;
 	flex-direction: column;
+}
+
+.customerName {
+	width: 5em;
+	height: 2em;
 }

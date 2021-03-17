@@ -4,17 +4,18 @@ import { useHistory } from 'react-router-dom';
 
 // REDUX
 import {connect} from 'react-redux';
-import {LOGIN} from '../../redux/Types/customerType.js'
+import {LOGIN} from '../../redux/Types/customerType.js';
 
-import './Login.css'
+import './Login.css';
 
 import Input from '../../components/Input/Input';
 import Submit from '../../components/Submit/Submit';
 // import {checkError, checkAge} from '../../useful/Useful';
-import Header from '../../components/Header/Header';
+import piñosChill from '../../assets/Images/piñosChill.jpeg';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import piñosChill from '../../assets/Images/piñosChill.jpeg'
+import Header from '../../components/Header/Header';
+
 
 
 
@@ -37,16 +38,16 @@ const Login = (props) => {
 
   },[]);
 
-  const postLogin = async (props) => {
-    
+  const postLogin = async () => {
+
     let result = await axios.post('http://localhost:3000/customers/login', dataLogin);
     console.log(result)
 
     // Guardamos en RDX
-      props.dispatch({type: LOGIN, payload: result})
-
-      return setTimeout(() => {
-        history.push('/profile')
+    props.dispatch({type: LOGIN, payload: result.data});
+    console.log(result.data)
+    return setTimeout(() => {
+      history.push('/profile')
     }, 500);
 
   };
@@ -60,10 +61,8 @@ const Login = (props) => {
 
   return (
     <div className="masterLogin">
-      <Header/>
       <Navbar/>
-      {/* <div className="spaceBetweenHead"></div> */}
-      {/* <div className="spaceColumnLogin"></div> */}
+      <Header/>
       <div className="containerLogin">
         <div className="leftImg">
           <img className="imgStyle" src={piñosChill} alt=""/>
@@ -81,7 +80,6 @@ const Login = (props) => {
         <Submit type="submit" name="submit" title="Enviar" onClick={() => postLogin()}/>
       </div>
       </div>
-      {/* <div className="spaceColumnLogin"></div> */}
       <Footer/>
     </div>
 

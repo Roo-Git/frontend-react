@@ -2,12 +2,12 @@ import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
 
-import Header from '../../components/Header/Header';
-import Navbar from '../../components/Navbar/Navbar';
 import Cards from '../../components/Cards/Cards';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header/Header';
 
 //  Carousel Images
-// import cepillateLosDientes from '../../assets/Images/cepillateLosDientes.gif';
 import docLaMuela from '../../assets/Images/docLaMuela.jpeg';
 import niños from '../../assets/Images/niños.jpeg';
 import loveMyDentist from '../../assets/Images/loveMyDentist.jpg';
@@ -15,8 +15,8 @@ import implant from '../../assets/Images/implant.jpg';
 import PortadaSonrisas from '../../assets/Images/PortadaSonrisas.jpeg'
 
 
+
 import './Home.css'
-import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
 
@@ -24,8 +24,8 @@ const Home = () => {
   return ( 
 
     <div className="masterHome">
-      <Header/>
       <Navbar/>
+      <Header/>
       <div className="spaceBtwHead">
         <p className="welcomeMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <p className="descriptionMessage">Rem similique voluptates ipsam commodi facere totam repellendus mollitia consequatur obcaecati, assumenda tempore nulla atque fugiat beatae provident soluta molestias modi ducimus?</p>
@@ -49,7 +49,7 @@ const Home = () => {
        <Cards/>
       </div>
       <div className="spaceRowHome"></div>
-      <Footer/> 
+      <Footer/>
     </div>
   )
 }

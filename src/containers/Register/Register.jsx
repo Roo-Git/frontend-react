@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 
@@ -8,10 +8,12 @@ import './Register.css'
 import {checkError} from '../../useful/Useful';
 import Input from '../../components/Input/Input';
 import Submit from '../../components/Submit/Submit';
-import Header from '../../components/Header/Header';
+import primeraCitaGratis from '../../assets/Images/primeraCitaGratis.jpeg'
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import primeraCitaGratis from '../../assets/Images/primeraCitaGratis.jpeg'
+import Header from '../../components/Header/Header';
+
+
 
 
 
@@ -21,12 +23,12 @@ const Register = () => {
 
   const [dataRegister, setRegister] = useState({
     
-    
-    firstName : '',
-    lastName : '',
-    password : '', 
-    email : '',
+    firstName   : '',
+    lastName    : '',
+    password    : '', 
+    email       : '',
     phoneNumber : '',
+    address     : ''
   });
 
   const [message, setMessage] = useState('');
@@ -36,6 +38,22 @@ const Register = () => {
   const handleState = (event, props) => {
     setRegister({...dataRegister, [event.target.name]: event.target.type === "number" ? + event.target.value : event.target.value})
   };
+
+
+  useEffect(()=>{
+
+  },[]);
+
+  useEffect(()=>{
+
+  });
+
+  useEffect(()=>{
+    
+    return()=>{
+
+    }
+  },[]);
   
   // FUNCTIONS
   
@@ -56,9 +74,9 @@ const Register = () => {
       password: dataRegister.password,
       email: dataRegister.email,
       phoneNumber: dataRegister.phoneNumber,
+      address: dataRegister.address
     };
     console.log(body)
-
     let result = await axios.post('http://localhost:3000/customers/', body);
     console.log(result)
 
@@ -71,45 +89,43 @@ const Register = () => {
   return (
     
     <div className="masterRegister">
-        <Header/>
-        <Navbar/>
-      {/* <pre>{JSON.stringify(dataRegister, null,2)}</pre> */}
-      {/* <div className="spaceColumnRegisterUp"></div> */}
-        <div className="centralDiv">
-          <div className="imagen">
-            <img className="insideImg"src={primeraCitaGratis} alt=""/>
-          </div>
-          <div className="containerForm">
-            <label>
-              First Name:
-            <Input type="text" maxLength="30" name="firstName" onChange={handleState}/>
-            </label>
-            <label>
-                Last Name:
-              <Input type="text" maxLength="30" name="lastName"onChange={handleState}/>
-            </label>
-            <label>
-                Password:
-              <Input type="password" maxLength="12" name="password"onChange={handleState}/>
-            </label>
-            <label>
-                E-mail:
-              <Input type="email" maxLength="30"name="email"onChange={handleState}/>
-            </label>
-            <label>
-                Phone Number:
-              <Input type="text"  maxLength="12" name="phoneNumber"onChange={handleState}/>
-            </label>
-            <label>
-                address:
-              <Input type="text"  maxLength="12" name="address"onChange={handleState}/>
-            </label>
+      <Header/>
+      <Navbar/>
+      <div className="centralDiv">
+        <div className="imagen">
+          <img className="insideImg"src={primeraCitaGratis} alt=""/>
+        </div>
+        <div className="containerForm">
+          <label>
+            First Name:
+          <Input type="text" maxLength="30" name="firstName" onChange={handleState}/>
+          </label>
+          <label>
+              Last Name:
+            <Input type="text" maxLength="30" name="lastName"onChange={handleState}/>
+          </label>
+          <label>
+              Password:
+            <Input type="password" maxLength="12" name="password"onChange={handleState}/>
+          </label>
+          <label>
+              E-mail:
+            <Input type="email" maxLength="30"name="email"onChange={handleState}/>
+          </label>
+          <label>
+              Phone Number:
+            <Input type="text"  maxLength="12" name="phoneNumber"onChange={handleState}/>
+          </label>
+          <label>
+              address:
+            <Input type="text"  maxLength="20" name="address"onChange={handleState}/>
+          </label>
 
-            <div>{message}</div>
-            <Submit title="Enviar" onClick={() => sendData()}/>
-          </div>
-          {/* <div className="spaceColumnRegisterDown"></div> */}
-          </div>
+          <div>{message}</div>
+          <Submit title="Enviar" onClick={() => sendData()}/>
+        </div>
+        {/* <div className="spaceColumnRegisterDown"></div> */}
+        </div>
         <Footer/>
       </div>
   )

@@ -6,9 +6,11 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 // IMPORT VIEW.CONTAINERS
 import Home from './containers/Home/Home';
 import Login from './containers/Login/Login';
-import Register from './containers/Register/Register'
-import Profile from './containers/Profile/Profile'
-import Loading from './containers/Loading/Loading'
+import Register from './containers/Register/Register';
+import Profile from './containers/Profile/Profile';
+import Loading from './containers/Loading/Loading';
+
+
 
 
 
@@ -18,6 +20,7 @@ function App() {
 
       <BrowserRouter>
       
+    
         <Switch>
 
           <Route path='/' exact component={Loading}/>
