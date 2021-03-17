@@ -110,7 +110,7 @@ const Register = () => {
           </label>
           <label>
               E-mail:
-            <Input type="email" maxLength="30"name="email"onChange={handleState}/>
+            <Input type="email" maxLength="50"name="email"onChange={handleState}/>
           </label>
           <label>
               Phone Number:

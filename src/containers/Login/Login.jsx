@@ -38,16 +38,20 @@ const Login = (props) => {
 
   },[]);
 
+  let body = {
+    email : dataLogin.email,
+    password : dataLogin.password
+  };
+
   const postLogin = async () => {
 
-    let result = await axios.post('http://localhost:3000/customers/login', dataLogin);
-    console.log(result)
+    let result = await axios.post('http://localhost:3000/customers/login', body);
 
     // Guardamos en RDX
     props.dispatch({type: LOGIN, payload: result.data});
-    console.log(result.data)
+    console.log("GUARDAMOS RDX",result.data)
     return setTimeout(() => {
-      history.push('/profile')
+      history.push('/home')
     }, 500);
 
   };

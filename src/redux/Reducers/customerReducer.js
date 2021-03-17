@@ -1,7 +1,7 @@
 import {LOGIN, LOGOUT} from '../Types/customerType';
 
 const initialState = {
-  customer : []
+  customer : {}
  
 };
 
