@@ -6,6 +6,15 @@
     height: 100vmin;
 }
 
+.leftImg {
+    width: 34.4em;
+    height: 34em;
+}
+
+.imgStyle {
+    width: 20em;
+    height: 33em;
+}
 
 .containerLogin{
     display: flex;
@@ -21,14 +30,12 @@
 .masterForm {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: #67c1c1;
     height: 30em;
-    width: 30em;
+    width: 40em;
 
 }
 
-.tituloIniciarSesion {
+.tituloLogin {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,82 +48,44 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
-
 }
 
 .loginForm {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 30em;
     background-color: #f6f6f6;
     border-bottom-left-radius: 1.5em;
     border-bottom-right-radius: 1.5em;
+  
+  }
 
-}
-
-.labelEmail {
+.loginFormA {
     display: flex;
-    flex-direction: row;
-    width: 25em;
-    height: 2em;
-    background-color: #f6f6f6;
-}
-.inputEmail {
-    display: flex;
-    flex-direction: row;
-    width: 25em;
-    height: 2em;
-    background-color: #f6f6f6;
-}
-
-.spaceForm {
-    display: flex;
-    flex-direction: row;
-    width: 25em;
-    height: 2em;
-    background-color: #f6f6f6;
-}
-.leftImg {
-    width: 40em;
-    height: 34em;
-}
-
-.imgStyle {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 7em;
+    margin-right: 12em;
     width: 20em;
-    height: 33em;
+    height: 10em;
+    background-color: #f6f6f6;
+    font-size: 1.1em;
 }
 
-.containerSendRegister {
+.inputLoginContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    width: 20em;
-    background-color: #f6f6f6;
+    width: auto;
     height: 3em;
-    margin-top: 1em
+    background-color: #f6f6f6;
 }
 
-.send {
+.containerSendLogin {
     display: flex;
-    background-color: lightpink;
-    justify-content: center;
-    align-items: center;
-    width: 4em;
-    height: 2em;
-    text-align: center;
-    cursor: pointer;
-    color: white;
-    font-size: 1.5em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
-    border-radius: .3em;
-}
-
-.register {
-    display: flex;
+    flex-direction: column;
     background-color: lightpink;
     justify-content: center;
     align-items: center;
@@ -128,14 +97,18 @@
     font-size: 1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
     border-radius: .3em;
+    position: absolute;
+    margin-top: 16.5em;
+    margin-left: 5.8em;
 }
 
-.send:hover {
+.containerGoToRegister {
     display: flex;
-    background-color: #fa7bb0;
+    flex-direction: column;
+    background-color: lightpink;
     justify-content: center;
     align-items: center;
-    width: 4em;
+    width: 6em;
     height: 2em;
     text-align: center;
     cursor: pointer;
@@ -143,13 +116,14 @@
     font-size: 1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
     border-radius: .3em;
+    position: absolute;
+    margin-top: 16.5em;
+    margin-left: 15em;
 }
 
-
-
-.register:hover {
-
+.containerSendLogin:hover {
     display: flex;
+    flex-direction: column;
     background-color: #fa7bb0;
     justify-content: center;
     align-items: center;
@@ -161,5 +135,26 @@
     font-size: 1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
     border-radius: .3em;
+    position: absolute;
+    margin-top: 16.5em;
+    margin-left: 5.8em;
 }
 
+.containerGoToRegister:hover {
+    display: flex;
+    flex-direction: column;
+    background-color: #fa7bb0;
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    height: 2em;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+    border-radius: .3em;
+    position: absolute;
+    margin-top: 16.5em;
+    margin-left: 15em;
+}

@@ -58,28 +58,31 @@ const Login = (props) => {
           <img className="imgStyle" src={piñosChill} alt=""/>
         </div>
         <div className="masterForm">
-          <div className="tituloIniciarSesion">Iniciar Sesión</div>
-º           <div className="labelEmail">EMAIL</div>
-          <div className="inputEmail">
-            <Input type="text" name="email" onChange={handleState}/>
+          <div className="tituloLogin">Iniciar Sesión</div>
+          <div className="loginForm">
+            <div className="loginFormA">
+  
+              <div className="labelEmailLogin">EMAIL</div>
+              <div className="inputLoginContainer">
+              <Input type="text" name="email" onChange={handleState}/>
+              </div>
+              <div className="labelPwLogin">PASSWORD</div>
+              <div className="inputLoginContainer">
+              <Input type="password" name="password" onChange={handleState}/>
+              </div>
+              
+            </div>  
           </div>
-          <div className="spaceForm"></div>
-          <div className="labelEmail">PASSWORD</div>
-          <div className="inputEmail">
-            <Input type="password" name="password" onChange={handleState}/>
-          </div>
-          <div className="spaceForm"></div>
-          <div className="containerSendRegister">
-            <div className="send">
+          <div className="containerSendLogin">
             <Submit title="Enviar" onClick={() => postLogin()}/>
-            </div>   
-            <div className="register">
+          </div>
+          <div className="containerGoToRegister">
             <Button name="Registrate" destiny='register'/>
-            </div>
           </div>
         </div>
       </div>
     </div>
+      
   )
 
 };
@@ -90,3 +93,10 @@ export default connect()(Login);
 // Submit
 
 // Buton
+
+/*
+<Input type="text" name="email" onChange={handleState}/>
+<Input type="password" name="password" onChange={handleState}/>
+<Submit title="Enviar" onClick={() => postLogin()}/>
+<Button name="Registrate" destiny='register'/>
+*/
