@@ -78,8 +78,12 @@ const Header = (props) => {
     
           <div className="spaceRow2"></div>
           <div className="containerButtons">
+            <div className="buttonLogin">
               <Button name="Iniciar Sesión" destiny='login'/>
+            </div>
+            <div className="buttonRegister">
               <Button name="Registrate" destiny='register'/>
+            </div>
           </div>
         </div>
       )
