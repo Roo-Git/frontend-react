@@ -24,72 +24,65 @@ const Header = (props) => {
         history.push('/Home');
     },300);
   };
-  console.log("SOY PROPS CUSTOMER",props.customer)
+
   if(props.customer.jwt?.customer?.firstName){
-    console.log("EL IIIIIIIIIIIIIIIIF")
-    
-      // Vista Normal
-      return (
-          <div className="header">
-    
-          <div className="spaceRow1"></div>
-    
-          <div className="containerLogoBussines">
-            <p><Link to="/Home"><img className="logoBussines"src={logoBussines} alt=""/></Link></p>
-          </div>
-            
-          <div className="containerTitle">
-            <div className="title1">Doc.</div>
-            <div className="title2">La Muela</div>
-          </div>
-    
-          <div className="spaceRow2"></div>
-          <div className="containerButtons">
-            <div className="customerName">
-                Hola {props.customer.jwt?.customer?.firstName}
-            </div>
-              <Submit type="submit" name="submit" title="logout" onClick={() => logOut()}/>
-          </div>
-        </div>
-      )
-    
-     
-    ///////
 
-    } else {
-      console.log("Soy el ELSE")
-
-      return (
-
-        // Vista Normal
-      
+    return (
         <div className="header">
-    
-          <div className="spaceRow1"></div>
-    
-          <div className="containerLogoBussines">
-            <p><Link to="/Home"><img className="logoBussines"src={logoBussines} alt=""/></Link></p>
+  
+        <div className="spaceRow1"></div>
+  
+        <div className="containerLogoBussines">
+          <p><Link to="/Home"><img className="logoBussines"src={logoBussines} alt=""/></Link></p>
+        </div>
+          
+        <div className="containerTitle">
+          <div className="title1">Doc.</div>
+          <div className="title2">La Muela</div>
+        </div>
+  
+        <div className="spaceRow2"></div>
+        <div className="containerButtons">
+          <div className="customerName">
+              Hola {props.customer.jwt?.customer?.firstName}
           </div>
-            
-          <div className="containerTitle">
-            <div className="title1">Doc.</div>
-            <div className="title2">La Muela</div>
-          </div>
+        <Button name="Profile" destiny='profile'/>
+            <Submit type="submit" name="submit" title="logout" onClick={() => logOut()}/>
+        </div>
+      </div>
+    )
+ 
+  } else {
+
+    return (
+
+      // Vista Normal
     
-          <div className="spaceRow2"></div>
-          <div className="containerButtons">
-            <div className="buttonLogin">
-              <Button name="Iniciar Sesión" destiny='login'/>
-            </div>
-            <div className="buttonRegister">
-              <Button name="Registrate" destiny='register'/>
-            </div>
+      <div className="header">
+  
+        <div className="spaceRow1"></div>
+  
+        <div className="containerLogoBussines">
+          <p><Link to="/Home"><img className="logoBussines"src={logoBussines} alt=""/></Link></p>
+        </div>
+          
+        <div className="containerTitle">
+          <div className="title1">Doc.</div>
+          <div className="title2">La Muela</div>
+        </div>
+  
+        <div className="spaceRow2"></div>
+        <div className="containerButtons">
+          <div className="buttonLogin">
+            <Button name="Iniciar Sesión" destiny='login'/>
+          </div>
+          <div className="buttonRegister">
+            <Button name="Registrate" destiny='register'/>
           </div>
         </div>
-      )
-    }
-      //////
-
+      </div>
+    )
+  }
 };
 
 const mapStateToProps = state => {

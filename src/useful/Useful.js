@@ -40,7 +40,7 @@ const checkError = (datosCheck) => {
 
       case 'password' :
 
-        if(! /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/.test(datosCheck[field])){
+        if(! /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#%&])(?=.{8,})/.test(datosCheck[field])){
           return "El password debe contener 8 caracteres, mayúsculas, minúsculas, número y algún caracter especial";
         }
           
@@ -52,6 +52,8 @@ const checkError = (datosCheck) => {
 
         return "Introduce nueve dígitos, por favor.";
       }
+
+      break;
 
       case 'address' : 
 

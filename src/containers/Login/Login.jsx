@@ -14,7 +14,6 @@ import Submit from '../../components/Submit/Submit';
 import piñosChill from '../../assets/Images/piñosChill.jpeg';
 
 import Button from '../../components/Button/Button'
-import Header from '../../components/Header/Header';
 
 
 
@@ -38,25 +37,20 @@ const Login = (props) => {
 
   },[]);
 
-  let body = {
-    email : dataLogin.email,
-    password : dataLogin.password
-  };
+
 
   const postLogin = async () => {
 
-    let result = await axios.post('http://localhost:3000/customers/login', body);
+    let result = await axios.post('http://localhost:3000/customers/login', dataLogin);
 
     // Guardamos en RDX
     props.dispatch({type: LOGIN, payload: result.data});
-    console.log("GUARDAMOS RDX",result.data)
     return setTimeout(() => {
     history.push('/home')
     }, 500);
     
   };
   
-
   return (
     <div className="masterLogin">
       <div className="containerLogin">
@@ -65,31 +59,27 @@ const Login = (props) => {
         </div>
         <div className="masterForm">
           <div className="tituloIniciarSesion">Iniciar Sesión</div>
-        <div className="loginForm">
-        <div className="labelEmail">EMAIL</div>
-        <div className="inputEmail">
-        <Input type="text" name="email" onChange={handleState}/>
+º           <div className="labelEmail">EMAIL</div>
+          <div className="inputEmail">
+            <Input type="text" name="email" onChange={handleState}/>
+          </div>
+          <div className="spaceForm"></div>
+          <div className="labelEmail">PASSWORD</div>
+          <div className="inputEmail">
+            <Input type="password" name="password" onChange={handleState}/>
+          </div>
+          <div className="spaceForm"></div>
+          <div className="containerSendRegister">
+            <div className="send">
+            <Submit title="Enviar" onClick={() => postLogin()}/>
+            </div>   
+            <div className="register">
+            <Button name="Registrate" destiny='register'/>
+            </div>
+          </div>
         </div>
-        <div className="spaceForm"></div>
-        <div className="labelEmail">PASSWORD</div>
-        <div className="inputEmail">
-        <Input type="password" name="password" onChange={handleState}/>
-        </div>
-        <div className="spaceForm"></div>
-        <div className="containerSendRegister">
-        <div className="send">
-        <Submit title="Enviar" onClick={() => postLogin()}/>
-        </div>   
-        <div className="register">
-        <Button name="Registrate" destiny='register'/>
-        </div>
-        </div>
-      </div>
-        </div>
-
       </div>
     </div>
-
   )
 
 };
