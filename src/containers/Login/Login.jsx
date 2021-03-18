@@ -51,9 +51,9 @@ const Login = (props) => {
     props.dispatch({type: LOGIN, payload: result.data});
     console.log("GUARDAMOS RDX",result.data)
     return setTimeout(() => {
-      history.push('/home')
+    history.push('/home')
     }, 500);
-
+    
   };
   
 
