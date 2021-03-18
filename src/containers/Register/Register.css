@@ -6,10 +6,10 @@
   height: 100vmin;
 }
 
-.containerLogin{
+.containerRegister{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 90em;
   height: 37em;
@@ -19,5 +19,109 @@
 }
 
 .imgStyleRegister {
-  margin-right: 36.8em;
+  display: flex;
+  margin-left: 5em;
+}
+
+.masterFormRegister {
+    display: flex;
+    flex-direction: column;
+    background-color: #67c1c1;
+    height: 30em;
+    width: 50em;
+    margin-right: 5em;
+}
+
+.tituloRegistro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  height: 4em;
+  background-color: lightpink;
+  color: white;
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 30em;
+  background-color: #f6f6f6;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+
+}
+
+.registerFormA {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 5em;
+  width: 20em;
+  background-color: #f6f6f6;
+  font-size: 1.1em;
+}
+
+.registerFormB {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #f6f6f6;
+  width: 20em;
+  margin-bottom: 5em;
+  font-size: 1.1em;
+}
+
+.inputFormContainerRegister {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  height: 3em;
+  background-color: #f6f6f6;
+}
+
+.sendRegister {
+  display: flex;
+  flex-direction: column;
+  background-color: lightpink;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  height: 2em;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+  border-radius: .3em;
+  position: absolute;
+  margin-top: 16.5em;
+  margin-left: 13.8em;
+}
+
+.sendRegister:hover {
+  display: flex;
+  flex-direction: column;
+  background-color: #fa7bb0;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  height: 2em;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+  border-radius: .3em;
+  position: absolute;
+  margin-top: 16.5em;
+  margin-left: 13.8em;
 }

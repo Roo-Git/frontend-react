@@ -88,11 +88,49 @@ const Register = () => {
   return (
     
     <div className="masterRegister">
-      <div className="containerLogin">
-      <img  className="imgStyleRegister"src={fondoRegister} alt=""/>
-      </div>
-        
-        </div>
+
+      <div className="containerRegister">
+          <img  className="imgStyleRegister"src={fondoRegister} alt=""/>
+
+          <div className="masterFormRegister">
+
+            <div className="tituloRegistro">Registro</div>
+              <div className="registerForm">
+                <div className="registerFormA">
+                  <div className="labelFirstNameRegister">NOMBRE</div>
+                  <div className="inputFormContainerRegister">
+                    <Input type="text" maxLength="30" name="firstName" onChange={handleState}/>
+                  </div>
+                  <div className="labelLastNameRegister">PRIMER APELLIDO</div>
+                  <div className="inputFormContainerRegister">
+                    <Input type="text" maxLength="30" name="lastName"onChange={handleState}/>
+                  </div>
+                  <div className="labelPasswordRegister">CONTRASEÑA</div> 
+                  <div className="inputFormContainerRegister">
+                    <Input type="password" maxLength="12" name="password"onChange={handleState}/>
+                  </div>
+                </div>
+                <div className="registerFormB">
+                  <div className="labelEmailRegister">EMAIL</div>
+                  <div className="inputFormContainerRegister">
+                    <Input type="email" maxLength="50"name="email"onChange={handleState}/>
+                  </div>
+                  <div className="labelPhoneRegister">TELEFONO</div>
+                  <div className="inputFormContainerRegister">
+                    <Input type="text"  maxLength="12" name="phoneNumber"onChange={handleState}/>
+                  </div>
+                  <div className="labelHomeRegister">DIRECCION</div>
+                  <div className="inputFormContainerRegister">
+                    <Input type="text"  maxLength="20" name="address"onChange={handleState}/>
+                  </div>
+                </div>
+              </div>
+            <div className="sendRegister">
+              <Submit title="Enviar" onClick={() => sendData()}/>
+            </div>
+          </div>
+      </div>   
+    </div>
         
 
   )
