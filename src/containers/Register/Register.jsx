@@ -8,10 +8,9 @@ import './Register.css'
 import {checkError} from '../../useful/Useful';
 import Input from '../../components/Input/Input';
 import Submit from '../../components/Submit/Submit';
-import primeraCitaGratis from '../../assets/Images/primeraCitaGratis.jpeg'
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
+import fondoRegister from '../../assets/Images/fondoRegister.jpeg';
+
+
 
 
 
@@ -89,13 +88,24 @@ const Register = () => {
   return (
     
     <div className="masterRegister">
-      <Header/>
-      <Navbar/>
-      <div className="centralDiv">
-        <div className="imagen">
-          <img className="insideImg"src={primeraCitaGratis} alt=""/>
+      <div className="containerLogin">
+      <img  className="imgStyleRegister"src={fondoRegister} alt=""/>
+      </div>
+        
         </div>
-        <div className="containerForm">
+        
+
+  )
+
+};
+
+// <div>{messageDate}</div>
+
+export default Register;
+
+
+/* 
+<div className="containerForm">
           <label>
             First Name:
           <Input type="text" maxLength="30" name="firstName" onChange={handleState}/>
@@ -124,14 +134,6 @@ const Register = () => {
           <div>{message}</div>
           <Submit title="Enviar" onClick={() => sendData()}/>
         </div>
-        {/* <div className="spaceColumnRegisterDown"></div> */}
-        </div>
-        <Footer/>
-      </div>
-  )
+      
 
-};
-
-// <div>{messageDate}</div>
-
-export default Register;
+*/

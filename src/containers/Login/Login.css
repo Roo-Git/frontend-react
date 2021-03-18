@@ -39,6 +39,8 @@
     color: white;
     font-size: xx-large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 
 }
 
@@ -50,8 +52,8 @@
     justify-content: center;
     height: 30em;
     background-color: #f6f6f6;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
 
 }
 

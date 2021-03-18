@@ -6,65 +6,18 @@
   height: 100vmin;
 }
 
-.spaceColumnRegisterUp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100vmin;
-  height: 20vmin;
-}
-
-.spaceColumnRegisterDown {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100vmin;
-  height: 30vmin;
-  border-radius: 10px;
-}
-
-.containerForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: solid 2px black;
-  width:60vmin;
-  height: 25em;
-  margin-right: 3em;
-  border-radius: 5px;
-  box-shadow: 10px 10px 5px black;
-  background-color: rgb(249,249,250);
-
-}
-
-label {
-  margin: .5em;
-  margin-top: 1em;
-}
-
-.imagen {
+.containerLogin{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
-  width: 50em;
-  height: 2em;
+  width: 90em;
+  height: 37em;
+  margin: 1em;
+  background-color: #67c1c1;
+  border-radius: 2em;
 }
 
-.centralDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100vmax;
-  height: 40em;
-}
-
-.insideImg {
-  width: 40em;
-  height: 25em;
+.imgStyleRegister {
+  margin-right: 36.8em;
 }
