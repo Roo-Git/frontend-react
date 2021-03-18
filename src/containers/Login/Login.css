@@ -12,8 +12,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100em;
-    height: 50em;
+    width: 90em;
+    height: 37em;
     margin: 1em;
     background-color: #67c1c1;
     border-radius: 2em;
@@ -25,6 +25,7 @@
     background-color: #67c1c1;
     height: 30em;
     width: 30em;
+
 }
 
 .tituloIniciarSesion {
@@ -38,7 +39,7 @@
     color: white;
     font-size: xx-large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
-    
+
 }
 
 .loginForm {
@@ -49,6 +50,9 @@
     justify-content: center;
     height: 30em;
     background-color: #f6f6f6;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+
 }
 
 .labelEmail {
@@ -106,6 +110,7 @@
     color: white;
     font-size: 1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+    border-radius: .3em;
 }
 
 .register {
@@ -120,5 +125,39 @@
     color: white;
     font-size: 1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+    border-radius: .3em;
+}
+
+.send:hover {
+    display: flex;
+    background-color: #fa7bb0;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 2em;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+    border-radius: .3em;
+}
+
+
+
+.register:hover {
+
+    display: flex;
+    background-color: #fa7bb0;
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    height: 2em;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+    border-radius: .3em;
 }
 

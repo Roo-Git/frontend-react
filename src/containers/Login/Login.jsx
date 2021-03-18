@@ -12,8 +12,8 @@ import Input from '../../components/Input/Input';
 import Submit from '../../components/Submit/Submit';
 // import {checkError, checkAge} from '../../useful/Useful';
 import piñosChill from '../../assets/Images/piñosChill.jpeg';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
+
+import Button from '../../components/Button/Button'
 import Header from '../../components/Header/Header';
 
 
@@ -57,12 +57,6 @@ const Login = (props) => {
   };
   
 
-  const goToRegister = () => {
-    return setTimeout(() => {
-      history.push('/register')
-    }, 500);
-  }
-
   return (
     <div className="masterLogin">
       <div className="containerLogin">
@@ -83,8 +77,12 @@ const Login = (props) => {
         </div>
         <div className="spaceForm"></div>
         <div className="containerSendRegister">
-        <div className="send" onClick={() => postLogin()}>Enviar</div>   
-        <div className="register" onClick={goToRegister}>¡Regístrate!</div>
+        <div className="send">
+        <Submit title="Enviar" onClick={() => postLogin()}/>
+        </div>   
+        <div className="register">
+        <Button name="Registrate" destiny='register'/>
+        </div>
         </div>
       </div>
         </div>
@@ -97,3 +95,8 @@ const Login = (props) => {
 };
 
 export default connect()(Login);
+
+
+// Submit
+
+// Buton
