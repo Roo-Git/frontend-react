@@ -82,9 +82,10 @@ const Login = (props) => {
         <Input type="password" name="password" onChange={handleState}/>
         </div>
         <div className="spaceForm"></div>
-           
+        <div className="containerSendRegister">
+        <div className="send" onClick={() => postLogin()}>Enviar</div>   
         <div className="register" onClick={goToRegister}>¡Regístrate!</div>
-        <Submit type="submit" name="submit" title="Enviar" onClick={() => postLogin()}/>
+        </div>
       </div>
         </div>
 

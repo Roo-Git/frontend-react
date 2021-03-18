@@ -63,7 +63,7 @@
     flex-direction: row;
     width: 25em;
     height: 2em;
-    background-color: red;
+    background-color: #f6f6f6;
 }
 
 .spaceForm {
@@ -83,15 +83,42 @@
     height: 33em;
 }
 
+.containerSendRegister {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 20em;
+    background-color: #f6f6f6;
+    height: 3em;
+    margin-top: 1em
+}
+
+.send {
+    display: flex;
+    background-color: lightpink;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 2em;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+}
 
 .register {
     display: flex;
     background-color: lightpink;
-    width: 20em;
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    height: 2em;
     text-align: center;
     cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
 }
 
-.register:hover {
-    color: blue;
-}
