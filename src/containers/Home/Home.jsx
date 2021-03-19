@@ -68,7 +68,10 @@ const Home = () => {
 
       <div className="superGridContainer">
           <div className="gridContainer">
-            <div className="a">Item 1</div>
+            <div className="a">
+              <div className="tittleA">Título</div>
+              <p className="prueba">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptatem dolorem neque quo eaque amet veritatis aliquid a deleniti porro. Voluptas voluptatem quod maiores ipsum, omnis nesciunt impedit asperiores veniam.</p>
+            </div>
             <div className="b">Item 2</div>
             <div className="c">Item 3</div>
             <div className="d">Item 4</div>
