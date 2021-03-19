@@ -1,7 +1,7 @@
 .footerContainer {
   display: flex;
   flex-direction: row;
-  width: 100vmax;
+  width: 100%;
   height: 10em;
 	color: black;
 

@@ -1,6 +1,8 @@
 /* 
 #67c1c1;
 #ffe4b5;
+#FFB6C1
+#fa7bb0
 */
 
 .masterHome {
@@ -29,7 +31,7 @@
   flex-direction: row;
   width: auto;
   height: 3em;
-  background-color: lightpink
+  background-color: #FFB6C1
 
 }
 
@@ -44,10 +46,22 @@
   display: flex;
   flex-direction: row;
   width: 60em;
-  height: 40em;
+  height: 20em;
   background-color: #FFEFD5;
   border-radius: 1.5em;
+  padding: 1em;
 }
+
+.sectionMain {
+  display: flex;
+  flex-direction: row;
+  width: 60em;
+  height: 20em;
+  background-color: #67c1c1;
+  border-radius: 1.5em;
+}
+
+
 
 .containerUser {
   display: flex;
@@ -60,7 +74,29 @@
   padding: 1em;
 }
 
-.section {
+.imgDoc {
+  display: flex;
+  width: 10em;
+  height: 20em;
+  margin-left: 3em;
+}
+
+.tituloMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20em;
+  height: 10em;
+  background-color: transparent;
+  position: absolute;
+  margin-left: 14em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  font-weight: 1000;
+  color: white;
+}
+
+.sectionUser {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -159,6 +195,69 @@
 }
 
 
+.spaceRow {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 10em;
+  background-color: white;
+}
+
+.superGridContainer {
+  display: grid;
+  width: 77em;
+  height: 47em;
+  margin: auto;
+  background-color: #FFEFD5;
+  border-radius: 1em;
+}
+
+.gridContainer {
+  display: grid;
+  width: 70em;
+  height: 40em;
+  text-align: center;
+  grid-template-columns: 23.35em 23.35em 23.35em;
+  grid-template-rows: 20em 20em 20em;
+  margin: auto;
+  background-color:  #67c1c1;
+  border-radius: 1em;
+  padding: 2em;
+}
+
+.a {
+  background-color: red;
+  padding: 1em;
+  border-top-left-radius: 1em;
+}
+
+.b {
+  background-color: blue;
+  padding: 1em
+}
+
+.c {
+  background-color: green;
+  padding: 1em;
+  border-top-right-radius: 1em;
+}
+
+.d {
+  background-color: yellow;
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.e {
+  background-color: salmon;
+  padding: 1em
+}
+
+.f {
+  background-color: purple;
+  padding: 1em;
+  border-bottom-right-radius: 1em;
+}
 
 /*
 .spaceRowHome {

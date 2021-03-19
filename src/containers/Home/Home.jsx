@@ -14,6 +14,8 @@ import leaderboardOne from '../../assets/Images/leaderboardOne.jpeg';
 import leaderboardTwo from '../../assets/Images/leaderboardTwo.jpeg';
 import leaderboardThree from '../../assets/Images/leaderboardThree.jpeg';
 import user from '../../assets/Images/user.jpeg';
+import superDoc from '../../assets/Images/superDoc.png';
+
 
 
 
@@ -36,17 +38,47 @@ const Home = () => {
 
       <div className="containerHomeMainUser">
 
-        <div className="containerMain"></div>
+        <div className="containerMain">
+
+          <div className="sectionMain">
+            <div className="imgDoc"><img src={superDoc} alt=""/></div>
+            <div className="tituloMain">
+              <p className="tituloMainDoc">Doc. La Muela</p>
+              <p>Sacando Muelas desde 1978</p>
+            </div>
+          </div>
+          
+        </div>
+
+
 
         <div className="containerUser">
-          <div className="section">
+
+          <div className="sectionUser">
             <div className="imgUser"><img src={user}/></div>
             <div className="buttonRegisterHome"><Button name="Registrate" destiny='register'/> </div>
             <div className="buttonLoginHome"><Button name="Login" destiny='login'/> </div>
           </div>
+
         </div>
 
       </div>
+
+      <div className="spaceRow"></div>
+
+      <div className="superGridContainer">
+          <div className="gridContainer">
+            <div className="a">Item 1</div>
+            <div className="b">Item 2</div>
+            <div className="c">Item 3</div>
+            <div className="d">Item 4</div>
+            <div className="e">Item 5</div>
+            <div className="f">Item 6</div>
+          </div>
+      </div>
+
+      <div className="spaceRow"></div>
+      <Footer/>
 
     </div>
   )
