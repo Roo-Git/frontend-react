@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 
+
 // REDUX
 import {connect} from 'react-redux';
 import {LOGIN} from '../../redux/Types/customerType.js';
@@ -45,10 +46,9 @@ const Login = (props) => {
 
     // Guardamos en RDX
     props.dispatch({type: LOGIN, payload: result.data});
-    return setTimeout(() => {
-    history.push('/home')
-    }, 500);
-    
+    console.log(result.data)
+    return setTimeout(() => {history.push('/home')}, 1000);
+  
   };
   
   return (
@@ -64,13 +64,12 @@ const Login = (props) => {
   
               <div className="labelEmailLogin">EMAIL</div>
               <div className="inputLoginContainer">
-              <Input type="text" name="email" onChange={handleState}/>
+                <Input type="text" name="email" onChange={handleState}/>
               </div>
               <div className="labelPwLogin">PASSWORD</div>
               <div className="inputLoginContainer">
-              <Input type="password" name="password" onChange={handleState}/>
+                <Input type="password" name="password" onChange={handleState}/>
               </div>
-              
             </div>  
           </div>
           <div className="containerSendLogin">

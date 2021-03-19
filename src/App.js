@@ -9,6 +9,7 @@ import Login from './containers/Login/Login';
 import Register from './containers/Register/Register';
 import Profile from './containers/Profile/Profile';
 import Loading from './containers/Loading/Loading';
+import Appointment from './containers/Appointment/Appointment';
 
 
 
@@ -28,6 +29,7 @@ function App() {
           <Route path='/login' exact component={Login}/>
           <Route path='/register' exact component={Register}/>
           <Route path='/profile' exact component={Profile}/>
+          <Route path='/appointment' exact component={Appointment}/>
 
         </Switch>
       
