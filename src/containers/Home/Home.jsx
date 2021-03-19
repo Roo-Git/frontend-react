@@ -6,16 +6,14 @@ import Cards from '../../components/Cards/Cards';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
+import Button from '../../components/Button/Button';
 
 //  Carousel Images
-import docLaMuela from '../../assets/Images/docLaMuela.jpeg';
-import niños from '../../assets/Images/niños.jpeg';
-import loveMyDentist from '../../assets/Images/loveMyDentist.jpg';
-import implant from '../../assets/Images/implant.jpg';
-import PortadaSonrisas from '../../assets/Images/PortadaSonrisas.jpeg'
+
 import leaderboardOne from '../../assets/Images/leaderboardOne.jpeg';
 import leaderboardTwo from '../../assets/Images/leaderboardTwo.jpeg';
 import leaderboardThree from '../../assets/Images/leaderboardThree.jpeg';
+import user from '../../assets/Images/user.jpeg';
 
 
 
@@ -27,12 +25,29 @@ const Home = () => {
   return ( 
 
     <div className="masterHome">
+
       <div className="containerHeader">
-        <img className="leaderboardOne" src={leaderboardOne} alt=""/>
-        <img className="leaderboardTwo" src={leaderboardTwo} alt=""/>
-        <img className="leaderboardThree" src={leaderboardThree} alt=""/>
+        <img  src={leaderboardOne}/>
+        <img  src={leaderboardTwo}/>
+        <img  src={leaderboardThree}/>
       </div>
+
       <div className="navbar"></div>
+
+      <div className="containerHomeMainUser">
+
+        <div className="containerMain"></div>
+
+        <div className="containerUser">
+          <div className="section">
+            <div className="imgUser"><img src={user}/></div>
+            <div className="buttonRegisterHome"><Button name="Registrate" destiny='register'/> </div>
+            <div className="buttonLoginHome"><Button name="Login" destiny='login'/> </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   )
 }
