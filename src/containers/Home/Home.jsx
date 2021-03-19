@@ -13,6 +13,9 @@ import niños from '../../assets/Images/niños.jpeg';
 import loveMyDentist from '../../assets/Images/loveMyDentist.jpg';
 import implant from '../../assets/Images/implant.jpg';
 import PortadaSonrisas from '../../assets/Images/PortadaSonrisas.jpeg'
+import leaderboardOne from '../../assets/Images/leaderboardOne.jpeg';
+import leaderboardTwo from '../../assets/Images/leaderboardTwo.jpeg';
+import leaderboardThree from '../../assets/Images/leaderboardThree.jpeg';
 
 
 
@@ -24,7 +27,21 @@ const Home = () => {
   return ( 
 
     <div className="masterHome">
-      <Navbar/>
+      <div className="containerHeader">
+        <img className="leaderboardOne" src={leaderboardOne} alt=""/>
+        <img className="leaderboardTwo" src={leaderboardTwo} alt=""/>
+        <img className="leaderboardThree" src={leaderboardThree} alt=""/>
+      </div>
+      <div className="navbar"></div>
+    </div>
+  )
+}
+
+export default Home;
+
+
+/*
+ <Navbar/>
       <Header/>
       <div className="spaceBtwHead">
         <p className="welcomeMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -36,7 +53,7 @@ const Home = () => {
           autoPlay={3000}
           animationSpeed={2000}
         >
-          {/* <img className="styleImg" src={cepillateLosDientes} alt=""/> */}
+          {/* <img className="styleImg" src={cepillateLosDientes} alt=""/> }*/ /*
           <img className="styleImg" src={docLaMuela} alt=""/>
           <img className="styleImg" src={niños} alt=""/>
           <img className="styleImg" src={loveMyDentist} alt=""/>
@@ -50,10 +67,4 @@ const Home = () => {
       </div>
       <div className="spaceRowHome"></div>
       <Footer/>
-    </div>
-  )
-}
-
-export default Home;
-
-
+*/

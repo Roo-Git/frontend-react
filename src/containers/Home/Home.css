@@ -1,8 +1,37 @@
+/* #67c1c1; */
+
 .masterHome {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: red;
 }
 
+
+.containerHeader {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #67c1c1;
+
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 4em;
+  background-color: black;
+
+}
+
+/*
 .spaceRowHome {
   width: 100vmax;
   height: 10em;
@@ -67,3 +96,4 @@
   margin-top: 2em;
 }
 
+*/
