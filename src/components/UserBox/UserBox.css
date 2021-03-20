@@ -5,55 +5,15 @@
 
 */
 
-
-
 .header {
 	display: flex;
 	flex-direction: row;
 	width: 100vmax;
 	height: 5em;
-	background-color: #e8fdfe;
+	
 }
 
-.spaceRow1 {
-	background-color: #e8fdfe;
-	width: 5vmax;
-	height: 5em;
-}
 
-.containerLogoBussines {
-	display: flex;
-	flex-direction: row;
-	align-self: center;
-	width: 4em;
-	height: 4em;
-	background-color: white;
-}
-
-.logoBussines {
-	display: flex;
-	justify-content: center;
-	width: 4em;
-	height: 4em;
-}
-
-.containerTitle {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-left: 1em;
-}
-
-.title1, .title2 {
-	color: #fa7bb0;
-	font-weight: 800;
-}
-
-.spaceRow2 {
-	background-color:#e8fdfe;
-	width: 40vmax;
-	height: 5em;
-}
 
 .containerButtons {
 	display: flex;
@@ -61,62 +21,83 @@
 
 }
 
-.column {
-	background-color: #168f9d;
-	width: 2.5em;
-	display: flex;
-	flex-direction: column;
-}
-
-.customerName {
-	width: 5em;
-	height: 2em;
-}
-
-.buttonLogin {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	justify-content: space-evenly;
-	margin-right: 4em;
-	margin-top: 1em;
-	height: 3em;
-	width: 6em;
-	transition: 0.3s;
-	border-radius: 0.4em;
-	cursor: pointer;
-	color: #fa7bb0;
-	font-weight: 800;
-}
-
-.buttonLogin:hover {
-	transition: 0.5s;
-	background-color: #fa7bb0;
-	color: white;
-	font-weight: 800;
-}
-
 .buttonRegister {
 	display: flex;
-	flex-direction: row;
-	align-items: center;
+	flex-direction: column;
+	background-color: #FFB6C1;
 	justify-content: center;
-	justify-content: space-evenly;
-	margin-right: 4em;
-	margin-top: 1em;
-	height: 3em;
-	width: 6em;
-	transition: 0.3s;
-	border-radius: 0.4em;
+	align-items: center;
+	width: 5em;
+	height: 2em;
+	text-align: center;
 	cursor: pointer;
-	color: #fa7bb0;
-	font-weight: 800;
-}
-
-.buttonRegister:hover {
-	transition: 0.5s;
-	background-color: #fa7bb0;
 	color: white;
-	font-weight: 800;
+	font-size: 1.5em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+	border-radius: .3em;
+	position: absolute;
+	margin-top: 4em;
+	margin-left: 5em;
+}
+  
+.buttonRegister:hover {
+	display: flex;
+	flex-direction: column;
+	background-color: #fa7bb0;
+	justify-content: center;
+	align-items: center;
+	width: 5em;
+	height: 2em;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	font-size: 1.5em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+	border-radius: .3em;
+	position: absolute;
+	margin-top: 4em;
+	margin-left: 5em;
+}
+  
+  
+.buttonLogin {
+	
+	  display: flex;
+	  flex-direction: column;
+	  background-color: #FFB6C1;
+	  justify-content: center;
+	  align-items: center;
+	  width: 6em;
+	  height: 2em;
+	  text-align: center;
+	  cursor: pointer;
+	  color: white;
+	  font-size: 1.5em;
+	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+	  border-radius: .3em;
+	  position: absolute;
+	  margin-top: 4em;
+	  margin-left: 11.5em;
+	
+  }
+  
+.buttonLogin:hover {
+	
+	display: flex;
+	flex-direction: column;
+	background-color: #fa7bb0;
+	justify-content: center;
+	align-items: center;
+	width: 6em;
+	height: 2em;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	font-size: 1.5em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+	border-radius: .3em;
+	position: absolute;
+	margin-top: 4em;
+	margin-left: 11.5em;
+  
 }

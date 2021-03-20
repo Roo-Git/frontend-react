@@ -30,26 +30,14 @@ const UserBox = (props) => {
 
     return (
         <div className="header">
-  
-        <div className="spaceRow1"></div>
-  
-        <div className="containerLogoBussines">
-          <p><Link to="/Home"><img className="logoBussines" alt=""/></Link></p>
-        </div>
-          
-        <div className="containerTitle">
-          <div className="title1">Doc.</div>
-          <div className="title2">La Muela</div>
-        </div>
-  
-        <div className="spaceRow2"></div>
-        <div className="containerButtons">
-          <div className="customerName">
+
+          <div className="containerButtons">
+            <div className="customerName">
               Hola {props.customer?.firstName}
-          </div>
-        <Button name="Profile" destiny='profile'/>
-        <Submit type="submit" name="submit" title="logout" onClick={() => logOut()}/>
-        <p><Link to="/Appointment" alt="">citas</Link></p>
+            </div>
+            <Button name="Perfil" destiny='profile'/>
+            <Submit type="submit" name="Salir" title="logout" onClick={() => logOut()}/>
+            <p><Link to="/Appointment" alt="">citas</Link></p>
         </div>
       </div>
     )
@@ -61,19 +49,7 @@ const UserBox = (props) => {
       // Vista Normal
     
       <div className="header">
-  
-        <div className="spaceRow1"></div>
-  
-        {/* <div className="containerLogoBussines">
-          <p><Link to="/Home"><img className="logoBussines" alt=""/></Link></p>
-        </div> */}
-          
-        {/* <div className="containerTitle">
-          <div className="title1">Doc.</div>
-          <div className="title2">La Muela</div>
-        </div> */}
-  
-        {/* <div className="spaceRow2"></div> */}
+
         <div className="containerButtons">
           <div className="buttonLogin">
             <Button name="Iniciar Sesión" destiny='login'/>
