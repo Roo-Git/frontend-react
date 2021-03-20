@@ -7,9 +7,7 @@ import axios from 'axios';
 import { SHOW } from '../../redux/Types/appointmentType'
 
 import './Profile.css'
-import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
 import Button from  '../../components/Button/Button';
 
 
@@ -33,8 +31,6 @@ const Profile = (props) => {
   if(props.customer?.id) {
     return (
       <div className="mainContainer">
-        <Header/>
-        <Navbar/>
         <div className="spaceUnderHead"></div>
         <div className="welcomeMessage">
           <h1>Bienvenido a Doc. La Muela</h1>

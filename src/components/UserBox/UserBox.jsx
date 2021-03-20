@@ -5,10 +5,10 @@ import {connect} from 'react-redux';
 
 import Button from '../Button/Button';
 import Submit from '../Submit/Submit'
-import './Header.css';
+import './UserBox.css';
 import { LOGOUT } from '../../redux/Types/customerType.js';
 
-const Header = (props) => {
+const UserBox = (props) => {
 
   let history = useHistory();
 
@@ -64,16 +64,16 @@ const Header = (props) => {
   
         <div className="spaceRow1"></div>
   
-        <div className="containerLogoBussines">
+        {/* <div className="containerLogoBussines">
           <p><Link to="/Home"><img className="logoBussines" alt=""/></Link></p>
-        </div>
+        </div> */}
           
-        <div className="containerTitle">
+        {/* <div className="containerTitle">
           <div className="title1">Doc.</div>
           <div className="title2">La Muela</div>
-        </div>
+        </div> */}
   
-        <div className="spaceRow2"></div>
+        {/* <div className="spaceRow2"></div> */}
         <div className="containerButtons">
           <div className="buttonLogin">
             <Button name="Iniciar Sesión" destiny='login'/>
@@ -94,4 +94,4 @@ const mapStateToProps = state => {
   }
 };
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps)(UserBox);
