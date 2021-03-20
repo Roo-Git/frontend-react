@@ -38,19 +38,13 @@
 .containerHomeMainUser {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 5em;
+  width: auto;
+  background-color: #FFEFD5;
 }
 
-.containerMain {
-  display: flex;
-  flex-direction: row;
-  width: 60em;
-  height: 20em;
-  background-color: #FFEFD5;
-  border-radius: 1.5em;
-  padding: 1em;
-}
+
 
 .sectionMain {
   display: flex;
@@ -59,20 +53,13 @@
   height: 20em;
   background-color: #67c1c1;
   border-radius: 1.5em;
+  margin-left: 4em;
+  
 }
 
 
 
-.containerUser {
-  display: flex;
-  flex-direction: row;
-  width: 30em;
-  height: 20em;
-  background-color: #FFEFD5;
-  border-radius: 1.5em;
-  margin-left: 5em;
-  padding: 1em;
-}
+
 
 .imgDoc {
   display: flex;
@@ -104,6 +91,7 @@
   height: 20em;
   background-color: #67c1c1;
   border-radius: 1.5em;
+  margin-right: 4em;
 }
 
 .imgUser {

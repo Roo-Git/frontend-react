@@ -42,7 +42,7 @@ const Home = () => {
 
       <div className="containerHomeMainUser">
 
-        <div className="containerMain">
+        
 
           <div className="sectionMain">
             <div className="imgDoc"><img src={superDoc} alt=""/></div>
@@ -52,18 +52,18 @@ const Home = () => {
             </div>
           </div>
           
-        </div>
+        
 
 
 
-        <div className="containerUser">
+        
 
           <div className="sectionUser">
             <div className="imgUser"><img src={user}/></div>
             <UserBox/>
           </div>
 
-        </div>
+        
 
       </div>
 
