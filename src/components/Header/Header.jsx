@@ -25,7 +25,9 @@ const Header = (props) => {
     },300);
   };
 
-  if(props.customer.jwt?.customer?.firstName){
+  
+
+  if(props.customer?.id){
 
     return (
         <div className="header">
@@ -44,10 +46,11 @@ const Header = (props) => {
         <div className="spaceRow2"></div>
         <div className="containerButtons">
           <div className="customerName">
-              Hola {props.customer.jwt?.customer?.firstName}
+              Hola {props.customer?.firstName}
           </div>
         <Button name="Profile" destiny='profile'/>
-            <Submit type="submit" name="submit" title="logout" onClick={() => logOut()}/>
+        <Submit type="submit" name="submit" title="logout" onClick={() => logOut()}/>
+        <p><Link to="/Appointment" alt="">citas</Link></p>
         </div>
       </div>
     )
@@ -87,10 +90,9 @@ const Header = (props) => {
 
 const mapStateToProps = state => {
   return {
-      customer : state.customerReducer.customer
+    customer : state.customerReducer.customer,
+    token : state.customerReducer.token
   }
 };
 
-
 export default connect(mapStateToProps)(Header);
-

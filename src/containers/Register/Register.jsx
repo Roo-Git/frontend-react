@@ -12,10 +12,6 @@ import fondoRegister from '../../assets/Images/fondoRegister.jpeg';
 
 
 
-
-
-
-
 const Register = () => {
 
   const history = useHistory();

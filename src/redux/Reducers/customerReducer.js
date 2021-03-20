@@ -1,9 +1,10 @@
 import {LOGIN, LOGOUT} from '../Types/customerType';
 
 const initialState = {
-  customer : {}
- 
+  customer : {},
+  token : "" 
 };
+
 
 const customerReducer = (state = initialState, action) => {
 
@@ -12,13 +13,14 @@ const customerReducer = (state = initialState, action) => {
     case LOGIN : 
       return{
         ...state,
-        customer : action.payload
+        customer : action.payload.customer,
+        token : action.payload.token
       };
 
     case LOGOUT :
       return {
         ...state,
-        customer : action.payload
+        customer : initialState
       }
 
     default : 
@@ -26,5 +28,6 @@ const customerReducer = (state = initialState, action) => {
 
   };
 };
+
 
 export default customerReducer;

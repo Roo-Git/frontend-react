@@ -7,16 +7,17 @@ const createStoreWithMiddleware = applyMiddleware(
 )(createStore);
 
 const store = createStoreWithMiddleware(
-    reducer,
-    load({
-        preloadState : {
-            dataCustomer : ''
-        },
-        states: ["dataCustomer"]
-    })
-    /* window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__({
-        trace: true,
-    }) */
+  reducer,
+  load({
+    preloadState : {
+        dataCustomer : ''
+    },
+    states: ["dataCustomer"]
+  }),
+  
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__({
+      trace: true,
+  }) 
 
 );
 

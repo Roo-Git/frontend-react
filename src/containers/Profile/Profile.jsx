@@ -1,9 +1,10 @@
-import React,{useState, useEffect} from "react";
-import {useHistory} from 'react-router-dom';
+import React,{useEffect} from "react";
 import {connect} from 'react-redux';
 
 import axios from 'axios';
 
+// RDX
+import { SHOW } from '../../redux/Types/appointmentType'
 
 import './Profile.css'
 import Navbar from '../../components/Navbar/Navbar';
@@ -14,23 +15,22 @@ import Button from  '../../components/Button/Button';
 
 const Profile = (props) => {
 
-  // let history = useHistory();
+  console.log("dentro de profile",props.customer.token)
+  const getAppointments = async () =>{
+    let result = await axios.get(
+      `http://localhost:3001/appointments/
+      ${props.customer.customer?.id}/`, 
+      {headers: {"Authorization" : `Bearer ${props.customer.token}`}});    
+    console.log(result.data)
+    props.dispatch({type: SHOW, payload: result.data});
+  }
 
-  // const [appointment, setAppointment]  = useState({
-  //   appointment: []
-  // });
+  useEffect(()=>{
+    getAppointments();
 
-  // const getAppointments = async()=>{
-  //     let result = await axios.get( `http://localhost:3001/customers/${props.customer.customer.id}/appointments/`, { headers: {"Authorization" : `Bearer ${props.customer.customer.token}`} });
-  //     console.log(result.data)
+  },[])
 
-  // }
-
-  // useEffect(()=>{
-  //   getAppointments();
-
-  // },[])
-  if(props.customer?.jwt?.customer) {
+  if(props.customer?.id) {
     return (
       <div className="mainContainer">
         <Header/>
@@ -41,19 +41,19 @@ const Profile = (props) => {
         </div>
         <div className="spaceProfileContainer">
           <div>
-            {props.customer?.jwt?.customer.firstName}
+            {props.customer?.firstName}
           </div>
           <div>
-            {props.customer?.jwt?.customer.lastName}
+            {props.customer?.lastName}
           </div>
           <div>
-            {props.customer?.jwt?.customer.email}
+            {props.customer?.email}
           </div>
           <div>
-            {props.customer?.jwt?.customer.phoneNumber}
+            {props.customer?.phoneNumber}
           </div>
           <div>
-            {props.customer?.jwt?.customer.address}
+            {props.customer?.address}
           </div>
         </div>
       <Footer/>
@@ -65,8 +65,15 @@ const Profile = (props) => {
       <div>
         No estas registrado aún!!! 
         <div className="register">
-         
           <Button name="Registrate" destiny='register'/>
+        </div>
+        <div class="sk-chase">
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
         </div>
       </div>
     )
@@ -76,7 +83,8 @@ const Profile = (props) => {
 
 const mapStateToProps = state => {
   return {
-      customer : state.customerReducer.customer
+    customer : state.customerReducer.customer,
+    appointment: state.appointmentReducer.appointment
   }
 };
 
