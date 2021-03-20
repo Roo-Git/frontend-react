@@ -25,6 +25,7 @@ const Register = () => {
     phoneNumber : '',
     address     : ''
   });
+  
 
   const [message, setMessage] = useState('');
   
@@ -53,6 +54,7 @@ const Register = () => {
   // FUNCTIONS
   
   const sendData = async () => {
+    console.log("REPRESENTANDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO")
   
     setMessage('');
 
@@ -62,6 +64,7 @@ const Register = () => {
     if(messageError){
       return;
     };
+    console.log(dataRegister.firstName)
 
     let body = { 
       firstName: dataRegister.firstName,
@@ -125,7 +128,8 @@ const Register = () => {
               <Submit title="Enviar" onClick={() => sendData()}/>
             </div>
           </div>
-      </div>   
+      </div>
+      <div>{message}</div>   
     </div>
         
 
