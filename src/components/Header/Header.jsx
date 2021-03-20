@@ -6,7 +6,6 @@ import {connect} from 'react-redux';
 import Button from '../Button/Button';
 import Submit from '../Submit/Submit'
 import './Header.css';
-import logoBussines from '../../assets/Icons/logoBussines.jpg';
 import { LOGOUT } from '../../redux/Types/customerType.js';
 
 const Header = (props) => {
@@ -35,7 +34,7 @@ const Header = (props) => {
         <div className="spaceRow1"></div>
   
         <div className="containerLogoBussines">
-          <p><Link to="/Home"><img className="logoBussines"src={logoBussines} alt=""/></Link></p>
+          <p><Link to="/Home"><img className="logoBussines" alt=""/></Link></p>
         </div>
           
         <div className="containerTitle">
@@ -66,7 +65,7 @@ const Header = (props) => {
         <div className="spaceRow1"></div>
   
         <div className="containerLogoBussines">
-          <p><Link to="/Home"><img className="logoBussines"src={logoBussines} alt=""/></Link></p>
+          <p><Link to="/Home"><img className="logoBussines" alt=""/></Link></p>
         </div>
           
         <div className="containerTitle">
