@@ -1,5 +1,7 @@
 import React,{useEffect} from "react";
 import {connect} from 'react-redux';
+import {useHistory} from 'react-router-dom';
+import { LOGOUT } from '../../redux/Types/customerType.js';
 
 import axios from 'axios';
 
@@ -7,11 +9,22 @@ import axios from 'axios';
 import { SHOW } from '../../redux/Types/appointmentType'
 
 import './Profile.css'
-import Footer from '../../components/Footer/Footer';
+import Submit from '../../components/Submit/Submit'
 import Button from  '../../components/Button/Button';
 
 
 const Profile = (props) => {
+
+  let history = useHistory();
+
+  const logOut =  () => {
+
+    props.dispatch({ type: LOGOUT, payload : {}});
+
+    setTimeout(()=> {
+        history.push('/Home');
+    },300);
+  };
 
   console.log("dentro de profile",props.customer.token)
   const getAppointments = async () =>{
@@ -30,30 +43,35 @@ const Profile = (props) => {
 
   if(props.customer?.id) {
     return (
-      <div className="mainContainer">
-        <div className="spaceUnderHead"></div>
-        <div className="welcomeMessage">
-          <h1>Bienvenido a Doc. La Muela</h1>
+      <div className="masterProfile">
+
+        <div className="containerProfile">
+          
+          <div className="masterFormProfile">
+            <div className="tituloProfile">Perfil</div>
+            <div className="perfilForm">
+                <div>
+                 Nombre: {props.customer?.firstName} {props.customer?.lastName}
+                </div>
+                <div>
+                  Email: {props.customer?.email}
+                </div>
+                <div>
+                  Teléfono: {props.customer?.phoneNumber}
+              </div>
+               <div>
+                  Calle: {props.customer?.address}
+              </div>
+            </div>
+          </div>
+          <div className="masterAccionesProfile">
+            <div className="tituloAccionesProfile">Acciones</div>
+            <div className="accionesProfile"></div>
+            <div className="logoutContainer"><Submit type="submit" name="Salir" title="Logout" onClick={() => logOut()}/></div>
+            
+          </div>
         </div>
-        <div className="spaceProfileContainer">
-          <div>
-            {props.customer?.firstName}
-          </div>
-          <div>
-            {props.customer?.lastName}
-          </div>
-          <div>
-            {props.customer?.email}
-          </div>
-          <div>
-            {props.customer?.phoneNumber}
-          </div>
-          <div>
-            {props.customer?.address}
-          </div>
-        </div>
-      <Footer/>
-      </div>
+    </div>
     )
   }else {
     console.log("Soy el Else de profile")
@@ -85,3 +103,9 @@ const mapStateToProps = state => {
 };
 
 export default connect(mapStateToProps)(Profile)
+
+
+
+/*
+      
+*/

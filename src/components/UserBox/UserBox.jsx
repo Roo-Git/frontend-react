@@ -76,5 +76,7 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps)(UserBox);
 
 
+// Lo vas a necesitar en Profile Roo //
+
 /*<Submit type="submit" name="Salir" title="logout" onClick={() => logOut()}/>
   <p><Link to="/Appointment" alt="">citas</Link></p> */
