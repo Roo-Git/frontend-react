@@ -108,7 +108,7 @@
 
 .imgUser {
   display: flex;
-  width: 10em;
+  width: 0em;
   height: 10em;
   margin-top: 5em;
 }
@@ -197,15 +197,14 @@
 
 .spaceRow {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: auto;
   height: 1em;
-  background-color: #FFEFD5;
 }
 
 .superGridContainer {
   display: grid;
-  width: 132em;
+  width: auto;
   height: 50em;
   margin: auto;
   background-color: #FFEFD5;
@@ -233,7 +232,6 @@
   background-color: #FFB6C1;
   border-radius: 1em;
 }
-
 
 .tittleGrid {
   display: grid;
@@ -287,69 +285,3 @@
  margin: auto;
 }
 
-/*
-.spaceRowHome {
-  width: 100vmax;
-  height: 10em;
-  background-color: white;
-}
-
-.spaceBtwHead {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vmax;
-  height: 8em;
-  background-color: white;
-
-}
-
-.carouselContainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100vmax;
-  height: 250m;
-}
-
-.styleImg {
-  width: 99vmax;
-  height: 30vmax;
-}
-
-.spaceColumnHome {
-  display: flex;
-  height: 10em;
-  width: 50em;
-  background-color: white;
-}
-
-.masterCardContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: white;
-  height: 22em;
-}
-
-.footerContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vmax;
-  height: 10em;
-	background-color: #168f9d;
-}
-
-.welcomeMessage {
-  font-size: 30px;
-  text-align:center;
-}
-
-.descriptionMessage {
-  margin-top: 2em;
-}
-
-*/
