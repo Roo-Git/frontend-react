@@ -66,11 +66,11 @@
 .containerUser {
   display: flex;
   flex-direction: row;
-  width: 25em;
+  width: 30em;
   height: 20em;
   background-color: #FFEFD5;
   border-radius: 1.5em;
-  margin-left: 10em;
+  margin-left: 5em;
   padding: 1em;
 }
 
