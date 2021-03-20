@@ -15,6 +15,10 @@ import leaderboardTwo from '../../assets/Images/leaderboardTwo.jpeg';
 import leaderboardThree from '../../assets/Images/leaderboardThree.jpeg';
 import user from '../../assets/Images/user.jpeg';
 import superDoc from '../../assets/Images/superDoc.png';
+import iconGridUno from '../../assets/Icons/iconGridUno.png'
+import iconGridDos from '../../assets/Icons/iconGridDos.png'
+import iconGridTres from '../../assets/Icons/iconGridTres.png'
+import iconGridCuatro from '../../assets/Icons/iconGridCuatro.png'
 
 
 
@@ -68,20 +72,31 @@ const Home = () => {
 
       <div className="superGridContainer">
           <div className="gridContainer">
-            <div className="a">
-              <div className="tittleA">Título</div>
-              <p className="prueba">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptatem dolorem neque quo eaque amet veritatis aliquid a deleniti porro. Voluptas voluptatem quod maiores ipsum, omnis nesciunt impedit asperiores veniam.</p>
+            <div className="backgroundGrid">
+              <div className="tittleGrid">Título</div>
+              <div className="containerIconGrid"><img src={iconGridUno}/></div>
+              <p className="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></br> <br></br>Quae voluptatem dolorem neque quo eaque amet veritatis aliquid a deleniti porro. <br></br> <br></br>Voluptas voluptatem quod maiores ipsum, omnis nesciunt impedit asperiores veniam.</p>
             </div>
-            <div className="b">Item 2</div>
-            <div className="c">Item 3</div>
-            <div className="d">Item 4</div>
-            <div className="e">Item 5</div>
-            <div className="f">Item 6</div>
+            <div className="backgroundGrid">
+              <div className="tittleGrid">Título</div>
+              <div className="containerIconGrid"><img src={iconGridDos}/></div>
+              <p className="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></br> <br></br>Quae voluptatem dolorem neque quo eaque amet veritatis aliquid a deleniti porro. <br></br> <br></br>Voluptas voluptatem quod maiores ipsum, omnis nesciunt impedit asperiores veniam.</p>
+            </div>
+            <div className="backgroundGrid">
+              <div className="tittleGrid">Título</div>
+              <div className="containerIconGrid"><img src={iconGridTres}/></div>
+              <p className="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></br> <br></br>Quae voluptatem dolorem neque quo eaque amet veritatis aliquid a deleniti porro. <br></br> <br></br>Voluptas voluptatem quod maiores ipsum, omnis nesciunt impedit asperiores veniam.</p>
+            </div>
+            <div className="backgroundGrid">
+              <div className="tittleGrid">Título</div>
+              <div className="containerIconGrid"><img src={iconGridCuatro}/></div>
+              <p className="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></br> <br></br>Quae voluptatem dolorem neque quo eaque amet veritatis aliquid a deleniti porro. <br></br> <br></br>Voluptas voluptatem quod maiores ipsum, omnis nesciunt impedit asperiores veniam.</p>
+            </div>
           </div>
       </div>
 
       <div className="spaceRow"></div>
-      <Footer/>
+      <div className="spaceRowColor"></div>
 
     </div>
   )

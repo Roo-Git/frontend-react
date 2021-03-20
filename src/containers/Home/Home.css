@@ -13,7 +13,7 @@
   height: auto;
   top:0;
   left:0;
-  background-color: white;
+  background-color: #FFEFD5;
 }
 
 
@@ -199,14 +199,14 @@
   display: flex;
   flex-direction: column;
   width: auto;
-  height: 10em;
-  background-color: white;
+  height: 1em;
+  background-color: #FFEFD5;
 }
 
 .superGridContainer {
   display: grid;
-  width: 77em;
-  height: 47em;
+  width: 132em;
+  height: 50em;
   margin: auto;
   background-color: #FFEFD5;
   border-radius: 1em;
@@ -214,65 +214,64 @@
 
 .gridContainer {
   display: grid;
-  width: 70em;
+  width: 104em;
   height: 40em;
   text-align: center;
-  grid-template-columns: 23.35em 23.35em 23.35em;
-  grid-template-rows: 20em 20em 20em;
+  grid-template-columns: 25em 25em 25em 25em;
+  grid-template-rows: 40em;
+  justify-content: space-between;
   margin: auto;
   background-color:  #67c1c1;
-  border-radius: 1em;
+  border-radius: 1.5em;
   padding: 2em;
-}
-
-.a {
-  display: flex;
-  flex-direction: column;
-  background-color: red;
-  border-top-left-radius: 1em;
-}
-
-.tittleA {
-  display: grid;
-  align-self: center;
-  align-content: center;
-  width: 16.75em;
-  height: 4em;
-  background-color: white;
-  border-top-left-radius: 0.6em;
-  font-weight: 1000;
-  font-size: 1.4rem;
-}
-
-.prueba {
-  display: flex;
-  align-self: center;
-  align-content: center;
   margin-top: 4em;
 }
 
-.b {
-  background-color: blue;
-  
+.backgroundGrid {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFB6C1;
+  border-radius: 1em;
 }
 
-.c {
-  background-color: green;
-  border-top-right-radius: 1em;
+
+.tittleGrid {
+  display: grid;
+  align-self: center;
+  align-content: center;
+  width: 12.5em;
+  height: 3em;
+  background-color: #fa7bb0;
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+  font-weight: 1000;
+  font-size: 2rem;
+  color: white;
 }
 
-.d {
-  background-color: yellow;
-  border-bottom-left-radius: 1em;
+.containerIconGrid {
+  display: flex;
+  justify-content: center;
+  height: 10em;
+  margin-top: 2em;
 }
 
-.e {
-  background-color: salmon;
+.parrafo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: white;
+  font-weight: 1000;
+  font-size: 1.4em;
+  margin-top: 2em;
+  text-align: center;
+  width: 15em;
 }
 
-.f {
-  background-color: purple;
-  border-bottom-right-radius: 1em;
+.spaceRowColor {
+  width: auto;
+  height: 3em;
+  background-color: #FFB6C1
 }
 
 /*
