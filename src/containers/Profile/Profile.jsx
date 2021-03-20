@@ -51,7 +51,7 @@ const Profile = (props) => {
             <div className="tituloProfile">Perfil</div>
             <div className="perfilForm">
                 <div>
-                 Nombre: {props.customer?.firstName} {props.customer?.lastName}
+                  Nombre: {props.customer?.firstName} {props.customer?.lastName}
                 </div>
                 <div>
                   Email: {props.customer?.email}
@@ -62,11 +62,15 @@ const Profile = (props) => {
                <div>
                   Calle: {props.customer?.address}
               </div>
+              <div>
+                  Citas: 
+              </div>
             </div>
           </div>
           <div className="masterAccionesProfile">
             <div className="tituloAccionesProfile">Acciones</div>
             <div className="accionesProfile"></div>
+            <div className="botonSinPintarPedirCita">METER AQUI</div>
             <div className="logoutContainer"><Submit type="submit" name="Salir" title="Logout" onClick={() => logOut()}/></div>
             
           </div>
