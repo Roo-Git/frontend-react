@@ -8,17 +8,17 @@ import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import Button from '../../components/Button/Button';
 
-//  Carousel Images
+
 
 import leaderboardOne from '../../assets/Images/leaderboardOne.jpeg';
 import leaderboardTwo from '../../assets/Images/leaderboardTwo.jpeg';
 import leaderboardThree from '../../assets/Images/leaderboardThree.jpeg';
 import user from '../../assets/Images/user.jpeg';
 import superDoc from '../../assets/Images/superDoc.png';
-import iconGridUno from '../../assets/Icons/iconGridUno.png'
-import iconGridDos from '../../assets/Icons/iconGridDos.png'
-import iconGridTres from '../../assets/Icons/iconGridTres.png'
-import iconGridCuatro from '../../assets/Icons/iconGridCuatro.png'
+import iconGridUno from '../../assets/Icons/iconGridUno.png';
+import iconGridDos from '../../assets/Icons/iconGridDos.png';
+import iconGridTres from '../../assets/Icons/iconGridTres.png';
+import iconGridCuatro from '../../assets/Icons/iconGridCuatro.png';
 
 
 
@@ -95,8 +95,8 @@ const Home = () => {
           </div>
       </div>
 
-      <div className="spaceRow"></div>
       <div className="spaceRowColor"></div>
+
 
     </div>
   )

@@ -271,7 +271,20 @@
 .spaceRowColor {
   width: auto;
   height: 3em;
-  background-color: #FFB6C1
+  background-color: #FFB6C1;
+  margin-top: 2.5em;
+}
+
+.footerContainer {
+  display: flex;
+  width: auto;
+  height: 30em;
+  background-color: #67c1c1;
+}
+
+.footerImg {
+ display: flex;
+ margin: auto;
 }
 
 /*
