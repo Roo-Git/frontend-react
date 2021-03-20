@@ -54,7 +54,7 @@ const Register = () => {
   // FUNCTIONS
   
   const sendData = async () => {
-    console.log("REPRESENTANDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO")
+    
   
     setMessage('');
 

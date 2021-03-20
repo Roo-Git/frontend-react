@@ -101,3 +101,62 @@
 	margin-left: 11.5em;
   
 }
+
+
+/* Vista Login */
+
+.customerName {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10em;
+	height: 4em;
+	margin-left: 2.6em;
+	font-size: 2.1em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+	font-weight: 1000;
+	color: white;
+
+}
+
+.profileButton {
+	
+	display: flex;
+	flex-direction: column;
+	background-color: #FFB6C1;
+	justify-content: center;
+	align-items: center;
+	width: 6em;
+	height: 2em;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	font-size: 1.5em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+	border-radius: .3em;
+	position: absolute;
+	margin-top: 6.5em;
+	margin-left: 7.5em;
+  
+}
+
+.profileButton:hover {
+  
+  display: flex;
+  flex-direction: column;
+  background-color: #fa7bb0;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  height: 2em;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+  border-radius: .3em;
+  position: absolute;
+  margin-top: 6.5em;
+  margin-left: 7.5em;
+}
+

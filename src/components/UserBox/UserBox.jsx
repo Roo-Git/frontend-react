@@ -29,15 +29,18 @@ const UserBox = (props) => {
   if(props.customer?.id){
 
     return (
+
+      // Vista Login
+
         <div className="header">
 
           <div className="containerButtons">
             <div className="customerName">
-              Hola {props.customer?.firstName}
+              ¡Hola {props.customer?.firstName}!
             </div>
+            <div className="profileButton">
             <Button name="Perfil" destiny='profile'/>
-            <Submit type="submit" name="Salir" title="logout" onClick={() => logOut()}/>
-            <p><Link to="/Appointment" alt="">citas</Link></p>
+            </div>
         </div>
       </div>
     )
@@ -71,3 +74,7 @@ const mapStateToProps = state => {
 };
 
 export default connect(mapStateToProps)(UserBox);
+
+
+/*<Submit type="submit" name="Salir" title="logout" onClick={() => logOut()}/>
+  <p><Link to="/Appointment" alt="">citas</Link></p> */
