@@ -13,6 +13,10 @@ import Submit from '../../components/Submit/Submit';
 import Button from  '../../components/Button/Button';
 import Input from "../../components/Input/Input.jsx";
 
+import leaderboardOne from '../../assets/Images/leaderboardOne.jpeg';
+import leaderboardTwo from '../../assets/Images/leaderboardTwo.jpeg';
+import leaderboardThree from '../../assets/Images/leaderboardThree.jpeg';
+
 
 const Profile = (props) => {
 
@@ -63,6 +67,14 @@ const Profile = (props) => {
   if(props.customer?.id) {
     return (
       <div className="masterProfile">
+        <div className="containerHeader">
+          <img  src={leaderboardOne}/>
+          <img  src={leaderboardTwo}/>
+          <img  src={leaderboardThree}/>
+        </div>
+
+        <div className="navbar"></div>
+        
 
         <div className="containerProfile">
           
@@ -97,6 +109,7 @@ const Profile = (props) => {
             
           </div>
         </div>
+        <div className="spaceRowColor"></div>
     </div>
     )
   }else {

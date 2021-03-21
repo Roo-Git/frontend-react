@@ -1,30 +1,41 @@
 .masterProfile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vmin;
-    background-color: #FFEFD5;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  top:0;
+  left:0;
+  background-color: #FFEFD5;
 }
 
 .containerProfile {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  align-self: center;
   width: 90em;
-  height: 37em;
-  margin: 1em;
+  height: auto;
+  margin: auto;
   background-color: #67c1c1;
   border-radius: 2em;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 3em;
+  background-color: #FFB6C1
+
 }
 
 .masterFormProfile {
   display: flex;
   flex-direction: column;
-  background-color: #67c1c1;
+  margin: 4em;
   height: 30em;
-  width: 30em;
+  width: 40em;
 
 }
 
