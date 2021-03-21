@@ -8,6 +8,7 @@ import './Register.css'
 import {checkError} from '../../useful/Useful';
 import Input from '../../components/Input/Input';
 import Submit from '../../components/Submit/Submit';
+import Button from '../../components/Button/Button';
 import fondoRegister from '../../assets/Images/fondoRegister.jpeg';
 
 import leaderboardOne from '../../assets/Images/leaderboardOne.jpeg';
@@ -98,7 +99,11 @@ const Register = () => {
         <img  src={leaderboardThree}/>
       </div>
 
-      <div className="navbar"></div>
+      <div className="navbar">
+          <div className="containerGoToHome">
+            <Button name="Home" destiny='home'/>
+          </div>
+      </div>
 
       <div className="containerRegister">
           <img  className="imgStyleRegister"src={fondoRegister} alt=""/>

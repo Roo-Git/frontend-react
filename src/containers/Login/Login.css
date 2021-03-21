@@ -91,7 +91,7 @@
     justify-content: space-evenly;
     margin-bottom: 7em;
     margin-right: 12em;
-    width: 20em;
+    width: 8em;
     height: 10em;
     background-color: #f6f6f6;
     font-size: 1.1em;
@@ -122,7 +122,7 @@
     border-radius: .3em;
     position: absolute;
     margin-top: 16.5em;
-    margin-left: 10.5em;
+    margin-left: 10.2em;
 }
 
 .containerGoToHome {
@@ -140,7 +140,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
     border-radius: .3em;
     margin-left: auto;
-    margin-right: 4em;
+    margin-right: 2.3em;
 }
 
 .containerSendLogin:hover {
