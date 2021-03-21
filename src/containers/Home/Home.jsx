@@ -108,21 +108,29 @@ const Home = () => {
             <p className="parrafo">¿Me das un follow?</p>
           </div>
           <div className="superContainerIcons">
-            <div className="iconContainer"><img src={iconTictok} alt=""/></div>
+
+            <div className="iconContainer"><a className="iconContainer"href="https://www.tiktok.com/es"><img src={iconTictok} alt=""/></a></div>
+
             <div className="spaceRowIconContainer"></div>
-            <div className="iconContainer"><img src={iconInstagram} alt=""/></div>
+
+            <div className="iconContainer"><a className="iconContainer"href="https://www.instagram.com/"><img src={iconInstagram} alt=""/></a></div>
+
             <div className="spaceRowIconContainer"></div>
-            <div className="iconContainer"><img src={iconTwitter} alt=""/></div>
+
+            <div className="iconContainer"><a className="iconContainer"href="https://twitter.com/"><img src={iconTwitter} alt=""/></a></div>
+
             <div className="spaceRowIconContainer"></div>
-            <div className="iconContainer"><img src={iconFacebook} alt=""/></div>
+
+            <div className="iconContainer"><a className="iconContainer"href="https://www.facebook.com/"><img src={iconFacebook} alt=""/></a></div>
             
             
           </div>
+
         </div>
+
         <div className="footerDos"><img src={footerDos} alt=""/></div>
 
       </div>
-
     </div>
   )
 }
