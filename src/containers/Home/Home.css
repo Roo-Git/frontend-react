@@ -178,13 +178,33 @@
 
 .footerContainer {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: auto;
-  height: 30em;
+  height: 20em;
   background-color: #67c1c1;
 }
 
-.footerImg {
- display: flex;
- margin: auto;
+.footerUno{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
 }
+
+.dos{
+  display: flex;
+  flex-direction: row;
+  width: 60em;
+  height: auto;
+}
+
+.footerDos{
+  display: flex;
+  flex-direction: auto;
+  height: auto;
+  background-color: #FFB6C1;
+}
+
+
 

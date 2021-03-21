@@ -18,6 +18,8 @@ import iconGridUno from '../../assets/Icons/iconGridUno.png';
 import iconGridDos from '../../assets/Icons/iconGridDos.png';
 import iconGridTres from '../../assets/Icons/iconGridTres.png';
 import iconGridCuatro from '../../assets/Icons/iconGridCuatro.png';
+import footerUno from '../../assets/Images/footerUno.jpeg';
+import footerDos from '../../assets/Images/footerDos.jpeg';
 
 
 
@@ -95,7 +97,12 @@ const Home = () => {
       </div>
 
       <div className="spaceRowColor"></div>
+      <div className="footerContainer">
+        <div className="footerUno"><img src={footerUno} alt=""/></div>
+        <div className="dos"></div>
+        <div className="footerDos"><img src={footerDos} alt=""/></div>
 
+      </div>
 
     </div>
   )
