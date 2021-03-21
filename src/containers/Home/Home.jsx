@@ -21,6 +21,7 @@ import iconTictok from '../../assets/Icons/iconTictok.png';
 
 import './Home.css'
 import UserBox from '../../components/UserBox/UserBox';
+import Button from '../../components/Button/Button';
 
 const Home = () => {
 
@@ -35,7 +36,11 @@ const Home = () => {
         <img  src={leaderboardThree}/>
       </div>
 
-      <div className="navbar"></div>
+      <div className="navbar">
+          <div className="buttonAdmin">
+            <Button name="Admin" destiny='admin'/>
+          </div>
+      </div>
 
       <div className="containerHomeMainUser">
 

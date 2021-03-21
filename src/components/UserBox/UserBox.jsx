@@ -54,9 +54,6 @@ const UserBox = (props) => {
       <div className="header">
 
         <div className="containerButtons">
-          <div className="buttonAdmin">
-            <Button name="Iniciar Admin" destiny='admin'/>
-          </div>
           <div className="buttonLogin">
             <Button name="Iniciar Sesión" destiny='login'/>
           </div>
