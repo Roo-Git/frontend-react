@@ -13,8 +13,11 @@ import Input from '../../components/Input/Input';
 import Submit from '../../components/Submit/Submit';
 // import {checkError, checkAge} from '../../useful/Useful';
 import piñosChill from '../../assets/Images/piñosChill.jpeg';
-
 import Button from '../../components/Button/Button'
+
+import leaderboardOne from '../../assets/Images/leaderboardOne.jpeg';
+import leaderboardTwo from '../../assets/Images/leaderboardTwo.jpeg';
+import leaderboardThree from '../../assets/Images/leaderboardThree.jpeg';
 
 
 
@@ -53,6 +56,13 @@ const Login = (props) => {
   
   return (
     <div className="masterLogin">
+      <div className="containerHeader">
+        <img  src={leaderboardOne}/>
+        <img  src={leaderboardTwo}/>
+        <img  src={leaderboardThree}/>
+      </div>
+
+      <div className="navbar"></div>
       <div className="containerLogin">
         <div className="leftImg">
           <img className="imgStyle" src={piñosChill} alt=""/>
@@ -80,6 +90,8 @@ const Login = (props) => {
           </div>
         </div>
       </div>
+      <div className="spaceRowColor"></div>
+      
     </div>
       
   )

@@ -19,6 +19,7 @@
 
 .containerHeader {
   display: flex;
+  flex-direction: row;
   width: auto;
   flex-direction: row;
   justify-content: center;
