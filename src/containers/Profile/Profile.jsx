@@ -73,7 +73,11 @@ const Profile = (props) => {
           <img  src={leaderboardThree}/>
         </div>
 
-        <div className="navbar"></div>
+        <div className="navbar">
+          <div className="containerGoToHome">
+            <Button name="Home" destiny='home'/>
+          </div>
+        </div>
         
 
         <div className="containerProfile">
