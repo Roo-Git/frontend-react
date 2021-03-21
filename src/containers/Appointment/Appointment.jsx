@@ -51,7 +51,7 @@ const Appointment = (props) => {
   console.log(appointment.dentalAppointment)
 
   if(appointment.dentalAppointment) {
-    
+    console.log(appointment.dentalAppointment)
     return (
       <div>
         <div>
@@ -67,7 +67,7 @@ const Appointment = (props) => {
         </div>
         <div>
           Hola que ase
-          <Submit type="submit" name="date" title="mostrar fecha" onClick={() => getAppointments()}/>
+          <Submit type="submit" name="date" title="mostrar fecha" onChange={() => getAppointments()}/>
         </div>
       </div>
     )

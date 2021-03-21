@@ -34,7 +34,8 @@ const Profile = (props) => {
   const [dataAppointment, setAppointment] = useState ({
     dentalAppointment : [],
     customerId : props.customer?.id,
-    dentistId : 1
+    dentistId : 1,
+    appointment : []
   });
 
   const handleState = (event) => {
@@ -118,7 +119,7 @@ const Profile = (props) => {
             <div className="tituloTusCitasProfile">Tus Citas</div>
             <div className="perfilTusCitasForm">
               <div className="parrafoCitaTusCitas">
-                  Fecha: {props.appointment?.dentalAppointment}
+                Tu próxima cita es: {props.appointment?.dentalAppointment}
               </div>
             </div>
           </div>
