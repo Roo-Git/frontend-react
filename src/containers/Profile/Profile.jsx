@@ -74,9 +74,8 @@ const Profile = (props) => {
         </div>
 
         <div className="navbar">
-          <div className="containerGoToHome">
-            <Button name="Home" destiny='home'/>
-          </div>
+          <div className="containerGoToHome"><Button name="Home" destiny='home'/></div>
+          <div className="logoutContainer"><Submit type="submit" name="Salir" title="Logout" onClick={() => logOut()}/></div>
         </div>
         
 
@@ -109,7 +108,7 @@ const Profile = (props) => {
             <Input type="datetime-local" name="dentalAppointment" onChange={handleState}/>
             <Submit type="submit" name="Salir" title="Crear cita" onClick={() => getAppointments()}/>
             </div>
-            <div className="logoutContainer"><Submit type="submit" name="Salir" title="Logout" onClick={() => logOut()}/></div>
+            
             
           </div>
         </div>

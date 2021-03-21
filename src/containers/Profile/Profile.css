@@ -115,29 +115,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
   border-radius: .3em;
   position: absolute;
-  margin-top: 10em;
-  margin-left: 12em;
+  margin-left: 1em;
 }
 
-.logoutContainer:hover {
-  display: flex;
-  flex-direction: column;
-  background-color: #fa7bb0;
-  justify-content: center;
-  align-items: center;
-  width: 6em;
-  height: 2em;
-  text-align: center;
-  cursor: pointer;
-  color: white;
-  font-size: 1.5em;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
-  border-radius: .3em;
-  position: absolute;
-  margin-top: 10em;
-  margin-left: 12em;
 
-}
 
 .containerGoToHome {
   display: flex;
