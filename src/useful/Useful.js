@@ -12,6 +12,7 @@ const checkError = (datosCheck) => {
 
       case 'firstName' : 
 
+      // eslint-disable-next-line
         if(! /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/.test(datosCheck[field])){
 
           return "El nombre introducido solo puede contener letras";
@@ -21,6 +22,7 @@ const checkError = (datosCheck) => {
 
       case 'lastName' : 
 
+      // eslint-disable-next-line
         if(! /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/.test(datosCheck[field])){
 
         return "El apellido introducido solo puede contener letras";
@@ -29,7 +31,8 @@ const checkError = (datosCheck) => {
         break;
 
       case 'email' :
-        
+
+      // eslint-disable-next-line
         if(! /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/.test(datosCheck[field]) ){
             
         return "El email introducido no es correcto";
@@ -40,6 +43,7 @@ const checkError = (datosCheck) => {
 
       case 'password' :
 
+      // eslint-disable-next-line
         if(! /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\_.*])(?=.{8,})/.test(datosCheck[field])){
           return "El password debe contener 8 caracteres, mayúsculas, minúsculas, número y algún caracter especial";
         }
@@ -48,6 +52,7 @@ const checkError = (datosCheck) => {
 
       case 'phoneNumber' : 
 
+      // eslint-disable-next-line
         if(! /^[0-9]{9,11}$/.test(datosCheck[field])){
 
         return "Introduce nueve dígitos sin espacios, por favor.";
@@ -55,8 +60,9 @@ const checkError = (datosCheck) => {
 
       break;
 
-        case 'address' : 
+        case 'address' :
 
+        // eslint-disable-next-line
         if(! /^[#.0-9a-zA-Z\s,-\ñÑ]+$/.test(datosCheck[field])){
 
         return "La calle introducida es incorrecta.";
