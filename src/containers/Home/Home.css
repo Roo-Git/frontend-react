@@ -178,13 +178,76 @@
 
 .footerContainer {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: auto;
-  height: 30em;
+  height: 20em;
   background-color: #67c1c1;
 }
 
-.footerImg {
- display: flex;
- margin: auto;
+.footerUno{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
 }
+
+.footerDos{
+  display: flex;
+  flex-direction: auto;
+  height: auto;
+  background-color: #FFB6C1;
+}
+
+.footerContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60em;
+  height: auto;
+}
+
+.boxTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 0em;
+  height: 4em;
+  background-color: blue;
+  text-align: center;
+
+}
+
+.superContainerIcons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 25em;
+  height: 3em;
+  margin: 2em;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  width: 3.2em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.spaceRowIconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  width: 1em;
+  height: 2em;
+}
+
 

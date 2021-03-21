@@ -1,12 +1,3 @@
-import Carousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
-
-
-import Cards from '../../components/Cards/Cards';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import Button from '../../components/Button/Button';
-
 
 
 import leaderboardOne from '../../assets/Images/leaderboardOne.jpeg';
@@ -18,6 +9,12 @@ import iconGridUno from '../../assets/Icons/iconGridUno.png';
 import iconGridDos from '../../assets/Icons/iconGridDos.png';
 import iconGridTres from '../../assets/Icons/iconGridTres.png';
 import iconGridCuatro from '../../assets/Icons/iconGridCuatro.png';
+import footerUno from '../../assets/Images/footerUno.jpeg';
+import footerDos from '../../assets/Images/footerDos.jpeg';
+import iconInstagram from '../../assets/Icons/iconInstagram.png';
+import iconFacebook from '../../assets/Icons/iconFacebook.png';
+import iconTwitter from '../../assets/Icons/iconTwitter.png';
+import iconTictok from '../../assets/Icons/iconTictok.png';
 
 
 
@@ -95,8 +92,36 @@ const Home = () => {
       </div>
 
       <div className="spaceRowColor"></div>
+      <div className="footerContainer">
+        <div className="footerUno"><img src={footerUno} alt=""/></div>
+        <div className="footerContent">
+          <div className="boxTitle">
+            <p className="parrafo">¿Me das un follow?</p>
+          </div>
+          <div className="superContainerIcons">
 
+            <div className="iconContainer"><a className="iconContainer"href="https://www.tiktok.com/es"><img src={iconTictok} alt=""/></a></div>
 
+            <div className="spaceRowIconContainer"></div>
+
+            <div className="iconContainer"><a className="iconContainer"href="https://www.instagram.com/"><img src={iconInstagram} alt=""/></a></div>
+
+            <div className="spaceRowIconContainer"></div>
+
+            <div className="iconContainer"><a className="iconContainer"href="https://twitter.com/"><img src={iconTwitter} alt=""/></a></div>
+
+            <div className="spaceRowIconContainer"></div>
+
+            <div className="iconContainer"><a className="iconContainer"href="https://www.facebook.com/"><img src={iconFacebook} alt=""/></a></div>
+            
+            
+          </div>
+
+        </div>
+
+        <div className="footerDos"><img src={footerDos} alt=""/></div>
+
+      </div>
     </div>
   )
 }

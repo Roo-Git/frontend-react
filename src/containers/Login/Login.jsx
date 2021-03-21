@@ -62,7 +62,11 @@ const Login = (props) => {
         <img  src={leaderboardThree}/>
       </div>
 
-      <div className="navbar"></div>
+      <div className="navbar">
+          <div className="containerGoToHome">
+            <Button name="Home" destiny='home'/>
+          </div>
+      </div>
       <div className="containerLogin">
         <div className="leftImg">
           <img className="imgStyle" src={piñosChill} alt=""/>
@@ -85,9 +89,6 @@ const Login = (props) => {
           <div className="containerSendLogin">
             <Submit title="Enviar" onClick={() => postLogin()}/>
           </div>
-          <div className="containerGoToRegister">
-            <Button name="Registrate" destiny='register'/>
-          </div>
         </div>
       </div>
       <div className="spaceRowColor"></div>
@@ -101,13 +102,3 @@ const Login = (props) => {
 export default connect()(Login);
 
 
-// Submit
-
-// Buton
-
-/*
-<Input type="text" name="email" onChange={handleState}/>
-<Input type="password" name="password" onChange={handleState}/>
-<Submit title="Enviar" onClick={() => postLogin()}/>
-<Button name="Registrate" destiny='register'/>
-*/
