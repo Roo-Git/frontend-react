@@ -19,7 +19,7 @@
 - [START](#start)
 - [ABOUT THE PROJECT](#about-the-project)
 - [TEAM PROJECT](#team-project)
-- [TECHNOLOGIES](#techonologies)
+- [TECNOLOGIES](#technologies)
 - [AUTORS](#autors)
 
 <br>
@@ -80,7 +80,7 @@
 <br>
 <br>
 
-## TECHNOLOGIES
+## TECNOLOGIES
 
 <div style="display: flex; height: 50px">
     <img src="src/assets/Icons/react.png"
