@@ -1,16 +1,30 @@
 <img src="src/assets/Images/leaderboardOne.jpeg" height= "75px"/>
 
+<br>
+<br>
+<br>
 
 
 ## A dentist website for children and not so children.
 
+<br>
+<br>
+<br>
+
  ## INDEX
+<br>
+<br>
+<br>
 
 - [START](#start)
 - [ABOUT THE PROJECT](#about-the-project)
 - [TEAM PROJECT](#team-project)
 - [TECHNOLOGIES](#techonologies)
 - [AUTORS](#autors)
+
+<br>
+<br>
+<br>
 
 ## START 
     1.  Clone our backend repository.
@@ -35,6 +49,10 @@
 
         -npm start
 
+<br>
+<br>
+<br>
+
 ## ABOUT THE PROJECT
 
     Hi! We are Alvaro and Robert!
@@ -48,16 +66,23 @@
 
     USER:
     PW:
+    <br>
+<br>
+<br>
+<br>
     
 ## TEAM PROJECT
 
     We have worked using the methodology pair-programing
 
     on three different branches called master, dev and testing.
+<br>
+<br>
+<br>
 
 ## TECHNOLOGIES
 
-<div style="display: flex; justify content: center; height: 50px" >
+<div style="display: flex; height: 50px">
     <img src="src/assets/Icons/react.png"
      height= "50px" />
     <img src="src/assets/Icons/Redux.png"
@@ -79,6 +104,10 @@
     <img src="src/assets/Icons/sequelize.png"
       height= "50px"/>
 </div>
+
+<br>
+<br>
+<br>
 
 ## AUTORS
 
