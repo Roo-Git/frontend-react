@@ -1,12 +1,3 @@
-import Carousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
-
-
-import Cards from '../../components/Cards/Cards';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import Button from '../../components/Button/Button';
-
 
 
 import leaderboardOne from '../../assets/Images/leaderboardOne.jpeg';
