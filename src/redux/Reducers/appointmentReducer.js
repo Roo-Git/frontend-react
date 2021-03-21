@@ -1,7 +1,8 @@
 import {SHOW, CREATE, UPDATE, DESTROY} from '../Types/appointmentType';
 
 const initialState = {
-  appointment: {}
+  appointment: {},
+  token : "" 
 };
 
 const appointmentReducer = (state = initialState, action) =>{
@@ -14,7 +15,8 @@ const appointmentReducer = (state = initialState, action) =>{
     case CREATE :
       return{
         ...state,
-        appointment: action.payload
+        appointment: action.payload,
+        token : action.payload.token
       }
     case UPDATE :
       return{

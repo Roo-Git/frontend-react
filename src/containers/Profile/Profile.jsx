@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React,{useEffect, useState} from "react";
 import {connect} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import { LOGOUT } from '../../redux/Types/customerType.js';
@@ -6,11 +6,12 @@ import { LOGOUT } from '../../redux/Types/customerType.js';
 import axios from 'axios';
 
 // RDX
-import { SHOW } from '../../redux/Types/appointmentType'
+import { SHOW, CREATE } from '../../redux/Types/appointmentType'
 
 import './Profile.css'
-import Submit from '../../components/Submit/Submit'
+import Submit from '../../components/Submit/Submit';
 import Button from  '../../components/Button/Button';
+import Input from "../../components/Input/Input.jsx";
 
 
 const Profile = (props) => {
@@ -26,18 +27,36 @@ const Profile = (props) => {
     },300);
   };
 
-  console.log("dentro de profile",props.customer.token)
-  const getAppointments = async () =>{
-    let result = await axios.get(
-      `http://localhost:3001/appointments/
-      ${props.customer.customer?.id}/`, 
-      {headers: {"Authorization" : `Bearer ${props.customer.token}`}});    
-    console.log(result.data)
-    props.dispatch({type: SHOW, payload: result.data});
+  const [dataAppointment, setAppointment] = useState ({
+    dentalAppointment : '',
+    dentistId : 1
+  });
+
+  const handleState = (event) => {
+    setAppointment({...dataAppointment, [event.target.name]: event.target.type === "number" ? + event.target.value : event.target.value})
+  };
+
+  const getAppointments = async () => {
+
+    let body = {
+
+      dentalAppointment : dataAppointment.dentalAppointment,
+      dentistId : 1
+  
+    };
+
+    console.log(dataAppointment)
+
+    let result = await axios.post(`http://localhost:3000/appointments/`,
+    body,
+    {
+       headers: {"Authorization" : `Bearer ${props.custom?.token}`}
+    });
+      props.dispatch({type: CREATE, payload: result.data});
+      console.log(result.data)
   }
 
   useEffect(()=>{
-    getAppointments();
 
   },[])
 
@@ -63,14 +82,17 @@ const Profile = (props) => {
                   Calle: {props.customer?.address}
               </div>
               <div>
-                  Citas: 
+                  Citas: {props.appointment?.dentalAppointment}
               </div>
             </div>
           </div>
           <div className="masterAccionesProfile">
             <div className="tituloAccionesProfile">Acciones</div>
             <div className="accionesProfile"></div>
-            <div className="botonSinPintarPedirCita">METER AQUI</div>
+            <div className="botonSinPintarPedirCita">METER AQUI
+            <Input type="datetime-local" name="dentalAppointment" onChange={handleState}/>
+            <Submit type="submit" name="Salir" title="Crear cita" onClick={() => getAppointments()}/>
+            </div>
             <div className="logoutContainer"><Submit type="submit" name="Salir" title="Logout" onClick={() => logOut()}/></div>
             
           </div>

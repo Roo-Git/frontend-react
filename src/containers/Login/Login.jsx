@@ -47,7 +47,7 @@ const Login = (props) => {
     // Guardamos en RDX
     props.dispatch({type: LOGIN, payload: result.data});
     console.log(result.data)
-    return setTimeout(() => {history.push('/home')}, 1000);
+    return setTimeout(() => {history.push('/home')}, 100);
   
   };
   

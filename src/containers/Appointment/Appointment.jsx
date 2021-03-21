@@ -30,7 +30,6 @@ const Appointment = (props) => {
   
     };
 
-    console.log(dataAppointment)
     let result = await axios.post(`http://localhost:3000/appointments/`,
     body,
     {
