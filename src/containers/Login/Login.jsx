@@ -102,13 +102,3 @@ const Login = (props) => {
 export default connect()(Login);
 
 
-// Submit
-
-// Buton
-
-/*
-<Input type="text" name="email" onChange={handleState}/>
-<Input type="password" name="password" onChange={handleState}/>
-<Submit title="Enviar" onClick={() => postLogin()}/>
-<Button name="Registrate" destiny='register'/>
-*/

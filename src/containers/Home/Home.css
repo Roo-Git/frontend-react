@@ -219,7 +219,7 @@
 
 }
 
-.containerIcons {
+.superContainerIcons {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -236,9 +236,18 @@
   justify-self: center;
   justify-items: center;
   width: 3.2em;
-  background-color: #67c1c1;
   height: 2em;
+  cursor: pointer;
 }
 
+.spaceRowIconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  width: 1em;
+  height: 2em;
+}
 
 

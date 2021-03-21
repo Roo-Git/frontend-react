@@ -107,10 +107,13 @@ const Home = () => {
           <div className="boxTitle">
             <p className="parrafo">¿Me das un follow?</p>
           </div>
-          <div className="containerIcons">
+          <div className="superContainerIcons">
             <div className="iconContainer"><img src={iconTictok} alt=""/></div>
+            <div className="spaceRowIconContainer"></div>
             <div className="iconContainer"><img src={iconInstagram} alt=""/></div>
+            <div className="spaceRowIconContainer"></div>
             <div className="iconContainer"><img src={iconTwitter} alt=""/></div>
+            <div className="spaceRowIconContainer"></div>
             <div className="iconContainer"><img src={iconFacebook} alt=""/></div>
             
             

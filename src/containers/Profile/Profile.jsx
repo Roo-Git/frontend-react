@@ -148,6 +148,3 @@ export default connect(mapStateToProps)(Profile)
 
 
 
-/*
-      
-*/

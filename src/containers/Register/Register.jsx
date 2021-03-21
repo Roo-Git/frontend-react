@@ -155,41 +155,8 @@ const Register = () => {
 
 };
 
-// <div>{messageDate}</div>
+
 
 export default Register;
 
 
-/* 
-<div className="containerForm">
-          <label>
-            First Name:
-          <Input type="text" maxLength="30" name="firstName" onChange={handleState}/>
-          </label>
-          <label>
-              Last Name:
-            <Input type="text" maxLength="30" name="lastName"onChange={handleState}/>
-          </label>
-          <label>
-              Password:
-            <Input type="password" maxLength="12" name="password"onChange={handleState}/>
-          </label>
-          <label>
-              E-mail:
-            <Input type="email" maxLength="50"name="email"onChange={handleState}/>
-          </label>
-          <label>
-              Phone Number:
-            <Input type="text"  maxLength="12" name="phoneNumber"onChange={handleState}/>
-          </label>
-          <label>
-              address:
-            <Input type="text"  maxLength="20" name="address"onChange={handleState}/>
-          </label>
-
-          <div>{message}</div>
-          <Submit title="Enviar" onClick={() => sendData()}/>
-        </div>
-      
-
-*/
