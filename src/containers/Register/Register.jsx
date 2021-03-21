@@ -137,7 +137,7 @@ const Register = () => {
                   </div>
                   <div className="labelHomeRegister">DIRECCION</div>
                   <div className="inputFormContainerRegister">
-                    <Input type="text"  maxLength="20" name="address"onChange={handleState}/>
+                    <Input type="text"  maxLength="40" name="address"onChange={handleState}/>
                   </div>
                 </div>
               </div>

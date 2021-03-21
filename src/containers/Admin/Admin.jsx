@@ -25,18 +25,16 @@ const Admin = (props) => {
     };
 
     let showAppointment = await axios.get(`http://localhost:3000/appointments/`,
-    body,
-    {
-       headers: {"Authorization" : `Bearer ${props.custom?.token}`}
-    });
-
-    props.dispatch({type: SHOW, payload: showAppointment.data});
+    body)
+   
+    console.log(showAppointment)
+    props.dispatch({type: SHOW, payload: showAppointment.data})
     setAppointment({
       ...appointment,
       dentalAppointment : showAppointment.data
-    });
+    })
 
-  };
+  }
 
   if(appointment.dentalAppointment) {
     return (
@@ -44,9 +42,10 @@ const Admin = (props) => {
         <div>
           {appointment.dentalAppointment.map(appointments => {
             return (
-              <div>
+              <div key={appointments.id}>
                 <div>
                   Fecha de la cita: {appointments.dentalAppointment}
+                  Id del Cliente: {appointments.customerId}
                 </div>
               </div>
             )
@@ -76,4 +75,4 @@ const mapStateToProps = state =>{
 };
 
 
-export default connect()(Admin);
+export default connect(mapStateToProps)(Admin);

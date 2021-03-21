@@ -75,9 +75,9 @@ const Profile = (props) => {
       <div className="masterProfile">
         <div className="containerHeader">
 
-            <img  src={leaderboardOne}/>
-            <img  src={leaderboardTwo}/>
-            <img  src={leaderboardThree}/>
+            <img src={leaderboardOne}/>
+            <img src={leaderboardTwo}/>
+            <img src={leaderboardThree}/>
 
         </div>
 
