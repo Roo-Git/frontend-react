@@ -84,33 +84,39 @@ const Profile = (props) => {
           <div className="masterFormProfile">
             <div className="tituloProfile">Perfil</div>
             <div className="perfilForm">
-                <div>
+                <div className="parrafoCitaPerfil">
                   Nombre: {props.customer?.firstName} {props.customer?.lastName}
                 </div>
-                <div>
+                <div className="parrafoCitaPerfil">
                   Email: {props.customer?.email}
                 </div>
-                <div>
+                <div className="parrafoCitaPerfil">
                   Teléfono: {props.customer?.phoneNumber}
               </div>
-               <div>
+               <div className="parrafoCitaPerfil">
                   Calle: {props.customer?.address}
               </div>
-              <div>
-                  Citas: {props.appointment?.dentalAppointment}
-              </div>
+
             </div>
           </div>
-          <div className="masterAccionesProfile">
-            <div className="tituloAccionesProfile">Pide una cita</div>
-            <div className="accionesProfile">
+          <div className="masterPedirCitaProfile">
+            <div className="tituloPedirCitaProfile">Pide una cita</div>
+            <div className="pedirCitaProfile">
               <div className="appointmentContainer"><Input type="datetime-local" name="dentalAppointment" onChange={handleState}/></div>
               <div className="sendAppointmentContainer"><Submit type="submit" name="Salir" title="Crear cita" onClick={() => getAppointments()}/></div>
             </div>
-
-            
             
           </div>
+          <div className="masterTusCitasProfile">
+            <div className="tituloTusCitasProfile">Tus Citas</div>
+            <div className="perfilTusCitasForm">
+              <div className="parrafoCitaTusCitas">
+                  Fecha: {props.appointment?.dentalAppointment}
+              </div>
+            </div>
+          </div>
+
+
         </div>
         <div className="spaceRowColor"></div>
     </div>

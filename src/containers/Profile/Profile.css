@@ -35,7 +35,7 @@
   flex-direction: column;
   margin: 4em;
   height: 30em;
-  width: 40em;
+  width: 20em;
 
 }
 
@@ -60,12 +60,24 @@
   align-items: center;
   justify-content: space-evenly;
   height: 30em;
-  background-color: #f6f6f6;
+  background-color: #FFF8DC;
   border-bottom-left-radius: 1.5em;
   border-bottom-right-radius: 1.5em;
 }
 
-.masterAccionesProfile {
+.parrafoCitaPerfil {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: black;
+  font-weight: 1000;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 15em;
+}
+
+.masterPedirCitaProfile {
   display: flex;
   flex-direction: column;
   background-color: #67c1c1;
@@ -73,7 +85,7 @@
   width: 30em;
 }
 
-.tituloAccionesProfile {
+.tituloPedirCitaProfile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,16 +100,65 @@
   border-top-right-radius: 1em;
 }
 
-.accionesProfile {
+.pedirCitaProfile {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   height: 30em;
-  background-color: #f6f6f6;
+  background-color: #FFF8DC;
   border-bottom-left-radius: 1.5em;
   border-bottom-right-radius: 1.5em;
 }
+
+
+
+.masterTusCitasProfile {
+  display: flex;
+  flex-direction: column;
+  margin: 4em;
+  height: 30em;
+  width: 20em;
+
+}
+
+.tituloTusCitasProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  height: 4em;
+  background-color: lightpink;
+  color: white;
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.perfilTusCitasForm {
+  display: flex;
+  flex-direction: column;
+  height: 30em;
+  background-color: #FFF8DC;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+}
+
+.parrafoCitaTusCitas {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: black;
+  font-weight: 1000;
+  font-size: 1.2em;
+  margin-top: 1.9em;
+  margin-right: 10em;
+  text-align: center;
+  width: 15em;
+}
+
 
 
 .logoutContainer {
@@ -145,6 +206,24 @@
   display: flex;
   flex-direction: column;
   background-color: lightpink;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  height: 2em;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+  border-radius: .3em;
+  margin-left: auto;
+  margin-right: 6.9em;
+}
+
+.sendAppointmentContainer:hover {
+  display: flex;
+  flex-direction: column;
+  background-color: #fa7bb0;
   justify-content: center;
   align-items: center;
   width: 6em;
