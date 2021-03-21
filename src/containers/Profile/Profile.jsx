@@ -13,6 +13,10 @@ import Submit from '../../components/Submit/Submit';
 import Button from  '../../components/Button/Button';
 import Input from "../../components/Input/Input.jsx";
 
+import leaderboardOne from '../../assets/Images/leaderboardOne.jpeg';
+import leaderboardTwo from '../../assets/Images/leaderboardTwo.jpeg';
+import leaderboardThree from '../../assets/Images/leaderboardThree.jpeg';
+
 
 const Profile = (props) => {
 
@@ -63,40 +67,53 @@ const Profile = (props) => {
   useEffect(()=>{
 
   },[])
-  console.log(dentalAppointment)
+  
   if(props.customer?.id) {
     console.log("estoy dento del primer if y fel if")
     return (
       <div className="masterProfile">
-        <div className="logoutContainer"><Submit type="submit" name="Salir" title="Logout" onClick={() => logOut()}/></div>
+        <div className="containerHeader">
+
+            <img  src={leaderboardOne}/>
+            <img  src={leaderboardTwo}/>
+            <img  src={leaderboardThree}/>
+
+        </div>
+
+        <div className="navbar">
+          <div className="containerGoToHome"><Button name="Home" destiny='home'/></div>
+          <div className="logoutContainer"><Submit type="submit" name="Salir" title="Logout" onClick={() => logOut()}/></div>
+        </div>
+       
         <div className="containerProfile">
+
           <div className="masterFormProfile">
             <div className="tituloProfile">Perfil</div>
             <div className="perfilForm">
-              <div>
+              <div className="parrafoCitaPerfil">
                 Nombre: {props.customer?.firstName} {props.customer?.lastName}
               </div>
-              <div>
+              <div className="parrafoCitaPerfil">
                 Email: {props.customer?.email}
               </div>
-              <div>
+              <div className="parrafoCitaPerfil">
                 Teléfono: {props.customer?.phoneNumber}
               </div>
                <div className="parrafoCitaPerfil">
                   Calle: {props.customer?.address}
               </div>
-              <div>
-                Fecha de la cita: {props.appointments.dentalAppointment}
-              </div>
             </div>
-          <Submit type="submit" name="appointment" title="Crear cita" onClick={() => createAppointments()}/>
-          <Input type="datetime-local" name="dentalAppointment" onChange={handleState}/>
           </div>
-          <div className="masterAccionesProfile">
-            <div className="tituloAccionesProfile">Acciones</div>
-            <div className="accionesProfile"></div>
-           
-          </div>
+
+
+          <div className="masterPedirCitaProfile">
+            <div className="tituloPedirCitaProfile">Pide una cita</div>
+            <div className="pedirCitaProfile">
+              <div className="appointmentContainer"><Input type="datetime-local" name="dentalAppointment" onChange={handleState}/></div>
+              <div className="sendAppointmentContainer"><Submit type="submit" name="Salir" title="Crear cita" onClick={() => createAppointments()}/></div>
+            </div>
+            </div>
+
           <div className="masterTusCitasProfile">
             <div className="tituloTusCitasProfile">Tus Citas</div>
             <div className="perfilTusCitasForm">
