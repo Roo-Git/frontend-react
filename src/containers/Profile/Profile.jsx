@@ -101,7 +101,7 @@ const Profile = (props) => {
                 Teléfono: {props.customer?.phoneNumber}
               </div>
                <div className="parrafoCitaPerfil">
-                  Calle: {props.customer?.address}
+                Calle: {props.customer?.address}
               </div>
             </div>
           </div>
@@ -116,10 +116,10 @@ const Profile = (props) => {
             </div>
 
           <div className="masterTusCitasProfile">
-            <div className="tituloTusCitasProfile">Tus Citas</div>
+            <div className="tituloTusCitasProfile">Tu Cita</div>
             <div className="perfilTusCitasForm">
               <div className="parrafoCitaTusCitas">
-                Tu próxima cita es: {props.appointment?.dentalAppointment}
+                 {props.appointment?.dentalAppointment}
               </div>
             </div>
           </div>
