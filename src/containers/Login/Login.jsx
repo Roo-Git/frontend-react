@@ -62,7 +62,11 @@ const Login = (props) => {
         <img  src={leaderboardThree}/>
       </div>
 
-      <div className="navbar"></div>
+      <div className="navbar">
+          <div className="containerGoToHome">
+            <Button name="Home" destiny='home'/>
+          </div>
+      </div>
       <div className="containerLogin">
         <div className="leftImg">
           <img className="imgStyle" src={piñosChill} alt=""/>
@@ -84,9 +88,6 @@ const Login = (props) => {
           </div>
           <div className="containerSendLogin">
             <Submit title="Enviar" onClick={() => postLogin()}/>
-          </div>
-          <div className="containerGoToRegister">
-            <Button name="Registrate" destiny='register'/>
           </div>
         </div>
       </div>
