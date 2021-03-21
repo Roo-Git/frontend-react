@@ -102,12 +102,12 @@ const Profile = (props) => {
             </div>
           </div>
           <div className="masterAccionesProfile">
-            <div className="tituloAccionesProfile">Acciones</div>
-            <div className="accionesProfile"></div>
-            <div className="botonSinPintarPedirCita">METER AQUI
-            <Input type="datetime-local" name="dentalAppointment" onChange={handleState}/>
-            <Submit type="submit" name="Salir" title="Crear cita" onClick={() => getAppointments()}/>
+            <div className="tituloAccionesProfile">Pide una cita</div>
+            <div className="accionesProfile">
+              <div className="appointmentContainer"><Input type="datetime-local" name="dentalAppointment" onChange={handleState}/></div>
+              <div className="sendAppointmentContainer"><Submit type="submit" name="Salir" title="Crear cita" onClick={() => getAppointments()}/></div>
             </div>
+
             
             
           </div>

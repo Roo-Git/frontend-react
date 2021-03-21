@@ -118,8 +118,6 @@
   margin-left: 1em;
 }
 
-
-
 .containerGoToHome {
   display: flex;
   flex-direction: column;
@@ -138,7 +136,28 @@
   margin-right: 2.3em;
 }
 
+.appointmentContainer {
+  display: flex;
+  height: 19em;
+}
 
+.sendAppointmentContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: lightpink;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  height: 2em;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
+  border-radius: .3em;
+  margin-left: auto;
+  margin-right: 6.9em;
+}
 
 
 
