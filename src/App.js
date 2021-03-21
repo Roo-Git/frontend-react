@@ -10,6 +10,7 @@ import Register from './containers/Register/Register';
 import Profile from './containers/Profile/Profile';
 import Loading from './containers/Loading/Loading';
 import Appointment from './containers/Appointment/Appointment';
+import Admin from './containers/Admin/Admin';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/register' exact component={Register}/>
           <Route path='/profile' exact component={Profile}/>
           <Route path='/appointment' exact component={Appointment}/>
+          <Route path='/admin' exact component={Admin}/>
 
         </Switch>
       

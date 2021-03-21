@@ -2,24 +2,18 @@ import React, {useState} from 'react';
 import axios from 'axios';
 
 import {SHOW} from '../../redux/Types/appointmentType';
-import {connect} from 'react-redux';
-
-
-import './Appointment.css';
-import Input from '../../components/Input/Input';
 import Submit from '../../components/Submit/Submit';
+import {connect} from 'react-redux';
+import './Admin.css';
 
-const Appointment = (props) => {
+
+const Admin = (props) => {
 
 
   const [appointment, setAppointment] = useState ({
     dentalAppointment : [],
     dentistId : ''
   });
-
-  const handleState = (event) => {
-    setAppointment({...appointment, [event.target.name]: event.target.type === "number" ? + event.target.value : event.target.value})
-  };
 
   const getAppointments = async () => {
 
@@ -42,18 +36,11 @@ const Appointment = (props) => {
       dentalAppointment : showAppointment.data
     });
 
-    console.log(showAppointment.data)
   };
 
-  const pepe = (appointments) => {
-    console.log("IEEEEEEEEEE")
-  }
-  console.log(appointment.dentalAppointment)
-
   if(appointment.dentalAppointment) {
-    console.log(appointment.dentalAppointment)
     return (
-      <div>
+      <div className="container">
         <div>
           {appointment.dentalAppointment.map(appointments => {
             return (
@@ -66,8 +53,7 @@ const Appointment = (props) => {
           })}
         </div>
         <div>
-          Hola que ase
-          <Submit type="submit" name="date" title="mostrar fecha" onChange={() => getAppointments()}/>
+          <Submit className="fechas" type="submit" name="date" title="mostrar fecha" onClick={() => getAppointments()}/>
         </div>
       </div>
     )
@@ -89,5 +75,5 @@ const mapStateToProps = state =>{
   }
 };
 
-export default connect(mapStateToProps)(Appointment);
- 
+
+export default connect()(Admin);
