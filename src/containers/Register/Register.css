@@ -1,21 +1,30 @@
 .masterRegister{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vmin;
+  width: 100%;
+  min-height: 100vh;
+  top:0;
+  left:0;
+  background-color: #FFEFD5;
 }
 
-.containerRegister{
+.containerHeader {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 90em;
-  height: 37em;
-  margin: 1em;
+  width: auto;
+  flex-direction: row;
+  justify-content: center;
   background-color: #67c1c1;
-  border-radius: 2em;
+
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 3em;
+  background-color: #FFB6C1
+
 }
 
 .imgStyleRegister {
@@ -23,13 +32,29 @@
   margin-left: 5em;
 }
 
+.containerRegister{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 90em;
+  height: auto;
+  margin: auto;
+  background-color: #67c1c1;
+  border-radius: 2em;
+}
+
+
+
+
 .masterFormRegister {
     display: flex;
     flex-direction: column;
-    background-color: #67c1c1;
     height: 30em;
     width: 50em;
-    margin-right: 5em;
+    margin: 4em;
+    margin-right: 3.4em;
 }
 
 .tituloRegistro {

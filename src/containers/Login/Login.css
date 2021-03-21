@@ -52,6 +52,7 @@
 .masterForm {
     display: flex;
     flex-direction: column;
+    margin: 4em;
     height: 30em;
     width: 40em;
 

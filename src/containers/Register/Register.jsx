@@ -10,6 +10,10 @@ import Input from '../../components/Input/Input';
 import Submit from '../../components/Submit/Submit';
 import fondoRegister from '../../assets/Images/fondoRegister.jpeg';
 
+import leaderboardOne from '../../assets/Images/leaderboardOne.jpeg';
+import leaderboardTwo from '../../assets/Images/leaderboardTwo.jpeg';
+import leaderboardThree from '../../assets/Images/leaderboardThree.jpeg';
+
 
 
 const Register = () => {
@@ -88,6 +92,14 @@ const Register = () => {
     
     <div className="masterRegister">
 
+      <div className="containerHeader">
+        <img  src={leaderboardOne}/>
+        <img  src={leaderboardTwo}/>
+        <img  src={leaderboardThree}/>
+      </div>
+
+      <div className="navbar"></div>
+
       <div className="containerRegister">
           <img  className="imgStyleRegister"src={fondoRegister} alt=""/>
 
@@ -129,7 +141,8 @@ const Register = () => {
             </div>
           </div>
       </div>
-      <div>{message}</div>   
+      <div>{message}</div>
+      <div className="spaceRowColor"></div>   
     </div>
         
 
