@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 import {SHOW} from '../../redux/Types/appointmentType';
@@ -14,6 +14,25 @@ const Admin = (props) => {
     dentalAppointment : [],
     dentistId : ''
   });
+
+  const [users, setUsers] = useState({
+    listUsers : []
+  })
+
+  const getUsers = async () => {
+
+    let result = await axios.get(`http://localhost:3000/customers`)
+    console.log(result.data)
+
+    setUsers({
+      ...users,listUsers: result.data
+    })
+  };
+
+  useEffect(() => {
+   
+    getUsers()
+  }, [])
 
   const getAppointments = async () => {
 
@@ -45,7 +64,15 @@ const Admin = (props) => {
               <div key={appointments.id}>
                 <div>
                   Fecha de la cita: {appointments.dentalAppointment}
-                  Id del Cliente: {appointments.customerId}
+                  Paciente: {
+                    users.listUsers.map(paciente => {
+                      if(paciente.id === appointments.customerId) {
+                        return(
+                          paciente.firstName + ' ' + paciente.lastName
+                        )
+                      }
+                    } )
+                  }
                 </div>
               </div>
             )
