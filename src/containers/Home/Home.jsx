@@ -20,6 +20,10 @@ import iconGridTres from '../../assets/Icons/iconGridTres.png';
 import iconGridCuatro from '../../assets/Icons/iconGridCuatro.png';
 import footerUno from '../../assets/Images/footerUno.jpeg';
 import footerDos from '../../assets/Images/footerDos.jpeg';
+import iconInstagram from '../../assets/Icons/iconInstagram.png';
+import iconFacebook from '../../assets/Icons/iconFacebook.png';
+import iconTwitter from '../../assets/Icons/iconTwitter.png';
+import iconTictok from '../../assets/Icons/iconTictok.png';
 
 
 
@@ -99,7 +103,18 @@ const Home = () => {
       <div className="spaceRowColor"></div>
       <div className="footerContainer">
         <div className="footerUno"><img src={footerUno} alt=""/></div>
-        <div className="dos"></div>
+        <div className="footerContent">
+          <div className="boxTitle">
+            <p className="parrafo">¿Me das un follow?</p>
+          </div>
+          <div className="containerIcons">
+            <div className="iconContainer"><img src={iconTictok} alt=""/></div>
+            <div className="iconContainer"><img src={iconFacebook} alt=""/></div>
+            <div className="iconContainer"><img src={iconTwitter} alt=""/></div>
+            <div className="iconContainer"><img src={iconInstagram} alt=""/></div>
+            
+          </div>
+        </div>
         <div className="footerDos"><img src={footerDos} alt=""/></div>
 
       </div>
