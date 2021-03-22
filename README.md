@@ -2,19 +2,19 @@
 
 <br>
 <br>
-<br>
+
 
 
 ## A dentist website for children and not so children.
 
 <br>
 <br>
-<br>
+
 
  ## INDEX
 <br>
 <br>
-<br>
+
 
 - [START](#start)
 - [ABOUT THE PROJECT](#about-the-project)
@@ -24,7 +24,7 @@
 
 <br>
 <br>
-<br>
+
 
 ## START 
     1.  Clone our backend repository.
@@ -51,7 +51,6 @@
 
 <br>
 <br>
-<br>
 
 ## ABOUT THE PROJECT
 
@@ -64,12 +63,11 @@
 
     Also, you can bring all dental appointments from administrator.
 
-    USER:
-    PW:
-    <br>
+
+    
 <br>
 <br>
-<br>
+
     
 ## TEAM PROJECT
 
@@ -78,7 +76,7 @@
     on three different branches called master, dev and testing.
 <br>
 <br>
-<br>
+
 
 ## TECNOLOGIES
 
@@ -107,7 +105,7 @@
 
 <br>
 <br>
-<br>
+
 
 ## AUTORS
 
