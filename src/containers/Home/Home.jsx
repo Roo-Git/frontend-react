@@ -37,7 +37,7 @@ const Home = () => {
       </div>
 
       <div className="navbar">
-          <div className="buttonAdmin">
+          <div className="buttonAdminHome">
             <Button name="Admin" destiny='admin'/>
           </div>
       </div>

@@ -251,7 +251,7 @@
 }
 
 
-.buttonAdmin{
+.buttonAdminHome{
 	display: flex;
 	flex-direction: column;
 	background-color: #FFB6C1;
@@ -264,8 +264,7 @@
 	color: white;
 	font-size: 1.5em;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Poner Fuente de la IMG PIÑOS CLEAN */
-	border-radius: .3em;
   margin-left: auto;
-  margin-right: 2.3em;
+  margin-right: 2.2em;
 
 }
