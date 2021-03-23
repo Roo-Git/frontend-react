@@ -94,9 +94,9 @@ const Register = () => {
     <div className="masterRegister">
 
       <div className="containerHeader">
-        <img  src={leaderboardOne}/>
-        <img  src={leaderboardTwo}/>
-        <img  src={leaderboardThree}/>
+        <img src={leaderboardOne} alt=""/>
+        <img src={leaderboardTwo} alt=""/>
+        <img src={leaderboardThree} alt=""/>
       </div>
 
       <div className="navbar">

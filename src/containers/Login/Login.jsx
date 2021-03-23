@@ -53,6 +53,15 @@ const Login = (props) => {
     return setTimeout(() => {history.push('/home')}, 100);
   
   };
+
+  const showMePW = () => {
+    let x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
   
   return (
     <div className="masterLogin">
@@ -80,9 +89,11 @@ const Login = (props) => {
               <div className="inputLoginContainer">
                 <Input type="text" name="email" onChange={handleState}/>
               </div>
-              <div className="labelPwLogin">PASSWORD</div>
+              <div className="labelPwLogin">PASSWORD
+                <input type="checkbox" onclick={() => showMePW()}></input>Show Password
+              </div>
               <div className="inputLoginContainer">
-                <Input type="password" name="password" onChange={handleState}/>
+                <Input type="password" name="password" id="myInput" onChange={handleState}/>
               </div>
             </div>  
           </div>
